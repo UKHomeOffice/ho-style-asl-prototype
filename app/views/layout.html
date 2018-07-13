@@ -23,52 +23,55 @@
 {% from "warning-text/macro.njk"  import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+{% include "includes/head.html" %}
 {% endblock %}
 
 {% set bodyClasses = "ho-body" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+Research and testing with animals
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  <header>
+{% include "includes/cookie-banner.html" %}
+<header>
     <div class="wrapper-header">
-      <div class="header-logo">
-        {% include "includes/home-office-logo.html" %}
-      </div>
-      <div class="header-title">
-        <a href="/" class="header-name">Service name</a>
-      </div>
+        <div class="header-logo">
+            {% include "includes/home-office-logo.html" %}
+        </div>
+        <div class="header-title">
+            <a href="/" class="header-name">Research and testing with animals</a>
+        </div>
+        <div>
+            <a href="#" class="header-name">Sign out</a>
+        </div>
     </div>
-  </header>
+</header>
 {% endblock %}
 
 {% if useAutoStoreData %}
-  {% block footer %}
-    <footer>
-      <div class="wrapper-footer">
+{% block footer %}
+<footer>
+    <div class="wrapper-footer">
         <div class="footer-message">
-          <p class="govuk-body-s">A Home Office Digital, Data and Technology service</p>
+            <p class="govuk-body-s">A Home Office Digital, Data and Technology service</p>
         </div>
         <div class="footer-menu">
-          <ul>
-            <li><a href="#0">Feedback</a></li>
-            <li><a href="#0">Help</a></li>
-            <li><a href="#0">GOV.UK home</a></li>
-          </ul>
+            <ul>
+                <li><a href="#0">Feedback</a></li>
+                <li><a href="#0">Help</a></li>
+                <li><a href="#0">GOV.UK home</a></li>
+            </ul>
         </div>
-      </div>
-    </footer>
-  {% endblock %}
+    </div>
+</footer>
+{% endblock %}
 {% endif %}
 
 {% block bodyEnd %}
-  {% block scripts %}
-    {% include "includes/scripts.html" %}
-    {% block pageScripts %}{% endblock %}
-  {% endblock %}
-  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+{% block scripts %}
+{% include "includes/scripts.html" %}
+{% block pageScripts %}{% endblock %}
+{% endblock %}
+<!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}

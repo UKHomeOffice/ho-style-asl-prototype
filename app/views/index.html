@@ -1,43 +1,109 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+Research and testing with animals prototype
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
+<div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        <div class="govuk-!-padding-bottom-5"></div>
+        <h1 class="govuk-heading-xl">
+            Research and testing with animals prototype
+            <!--<span class="govuk-caption-xl">{{releaseVersion}}</span>-->
+            <!--</h1>{{releaseVersion | log }}-->
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+            <p><br>
+                This is a prototype that allows ASL delivery team to test ideas and for research purposes. It is not a
+                working software.
+            </p>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+            <h2 class="govuk-heading-m">Latest prototype - Sprint 12</h2>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+            <p>PEL amendments journey for Licensing team.</p>
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+            <p>Licensing team task list.</p>
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
+            <p>Last updated 13 July 2018.</p>
+
+            <a href="/sprint12" role="button"
+               class="govuk-button govuk-button">
+                Open prototype
+            </a>
+
+            <p></p>
+
+            <h2 class="govuk-heading-m">Previous prototypes</h2>
+
+            <details class="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Sprint 11
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h4 class="govuk-heading-s">Last updated 10 July 2018</h4>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Iterated PEL amendments journey (for Inspectors) based on last round of user testing</li>
+                        <li>Put the option "Return to applicant for more information" back in
+                        </li>
+                        <li>Added "Reassign to ASRU" as an option</li>
+                        <li>Remove the edit restrictions functionality as inspectors only provide recommendations, only
+                            Licensing team can edit it
+                        </li>
+                        <li>Iterated homepage, task list</li>
+                        <li>Updated the confirm recommendation page using the "Check your answers" GOV.UK design pattern
+                        </li>
+                    </ul>
+                    <a href="https://ho-asl-prototype.herokuapp.com/sprint11/index"
+                       class="govuk-link">Open prototype</a>
+                </div>
+            </details>
+
+            <details class="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Sprint 10
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h4 class="govuk-heading-s">Last updated 22 June 2018</h4>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Iterated PEL amendments journey (for Inspectors) based on last round of user testing</li>
+                        <li>Removed the option to "Get more information" as any back and forth communications would sit
+                            outside of the system
+                        </li>
+                        <li>Contextual guidance on assessment is added (first time testing this)</li>
+                        <li>Added the option to get notifications</li>
+                        <li>Added homepage, task list (draft idea)</li>
+                    </ul>
+                    <a href="https://projects.invisionapp.com/share/QPLG58Y6GXJ#/screens/303997329_Email_Notification"
+                       class="govuk-link">Open prototype</a>
+                </div>
+            </details>
+
+            <details class="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Sprint 9
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h4 class="govuk-heading-s">Last updated 27 June 2018 (for HOLTIF demo)</h4>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Iterated PEL amendments journey (for Establishment administrators) based on last round of
+                            user
+                            testing
+                        </li>
+                        <li>Inbox concept (first time testing this)</li>
+                    </ul>
+                    <a href="https://projects.invisionapp.com/share/W7KQ9DBEP9T#/screens/302319515"
+                       class="govuk-link">Open prototype</a>
+                </div>
+            </details>
+
     </div>
 </div>
 
