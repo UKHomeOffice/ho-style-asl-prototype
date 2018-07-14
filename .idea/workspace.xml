@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/sprint12/allocate/decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/allocate/decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sprint12/allocate/decision-allocate.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/allocate/decision-allocate.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,8 +52,8 @@
       <file leaf-file-name="tasks-shared-allocated.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -95,6 +93,7 @@
         <option value="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/allocate/decision.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/allocate/decision-allocate.html" />
       </list>
     </option>
   </component>
@@ -227,12 +226,12 @@
       <updated>1531496469225</updated>
       <workItem from="1531496471654" duration="14883000" />
       <workItem from="1531555791041" duration="747000" />
-      <workItem from="1531561429379" duration="382000" />
+      <workItem from="1531561429379" duration="1048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16012000" />
+    <option name="totallyTimeSpent" value="16678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="145" y="23" width="1215" height="830" extended-state="0" />
@@ -410,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/decision-allocate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/sass/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3431">
@@ -466,6 +458,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/decision-allocate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/decision.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -475,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
