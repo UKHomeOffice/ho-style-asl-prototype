@@ -50,8 +50,8 @@
       <file leaf-file-name="tasks-shared-allocated.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="540">
+              <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -116,11 +116,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="145" />
     <option name="y" value="23" />
-    <option name="width" value="1215" />
-    <option name="height" value="830" />
+    <option name="width" value="1295" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -225,15 +225,16 @@
       <workItem from="1531496471654" duration="14883000" />
       <workItem from="1531555791041" duration="747000" />
       <workItem from="1531561429379" duration="1048000" />
-      <workItem from="1531754674017" duration="598000" />
+      <workItem from="1531754674017" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17276000" />
+    <option name="totallyTimeSpent" value="17278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="145" y="23" width="1215" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23701842" />
@@ -500,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/allocate/tasks-shared-allocated.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="540">
+          <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
         </state>
       </provider>
     </entry>
