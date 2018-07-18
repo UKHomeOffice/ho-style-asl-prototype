@@ -1262,6 +1262,149 @@ $(function () {
     GOVUK.modules.start()
 }), window.GOVUK.stickAtTopWhenScrolling.init(), window.GOVUK.stopScrollingAtFooter.addEl($(".js-stick-at-top-when-scrolling"));
 
+// Select all checkbox change
+$(".jsCheckboxAll").change(function() {
+    // Change all ".jsCheckbox" checked status
+    $(".jsCheckbox").prop("checked", $(this).prop("checked"))
+
+    // Toggle checked class on other checkboxes
+    if($(this).prop("checked")) {
+        $(".jsCheckbox").parents("tr").addClass("checked")
+    } else {
+        $(".jsCheckbox").parents("tr").removeClass("checked")
+    }
+})
+
+//".jsCheckbox" change
+$(".jsCheckbox").change(function(){
+    $(this).parents("tr").toggleClass("checked")
+
+    //uncheck "select all", if one of the listed checkbox item is unchecked
+    if(false == $(this).prop("checked")){
+        //change "select all" checked status to false
+        $(".jsCheckboxAll").prop("checked", false)
+    }
+
+    //check "select all" if all checkbox items are checked
+    if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length ){
+        $(".jsCheckboxAll").prop("checked", true)
+    }
+})
+
+//Select entire table row
+$(".table-clickable tbody tr").click(function(e) {
+    if (e.target.type == "checkbox") {
+        // stop the bubbling to prevent firing the rows click event
+        e.stopPropagation()
+    } else {
+        // Click the
+        if ($(this).hasClass("checked")) {
+            $(this).find("input").click()
+            $(this).removeClass("checked")
+        } else {
+            $(this).find("input").click()
+            $(this).addClass("checked")
+        }
+    }
+})
+
+
+
+
+// // Select all checkbox change
+// $(".jsCheckboxAll").change(function() {
+//     // Change all ".jsCheckbox" checked status
+//     $(".jsCheckbox").prop("checked", $(this).prop("checked"))
+//
+//     // Toggle checked class on other checkboxes
+//     if($(this).prop("checked")) {
+//         $(".jsCheckbox").parents("tr").addClass("checked")
+//     } else {
+//         $(".jsCheckbox").parents("tr").removeClass("checked")
+//     }
+// })
+//
+// //".jsCheckbox" change
+// $(".jsCheckbox").change(function(){
+//     $(this).parents("tr").toggleClass("checked")
+//
+//     //uncheck "select all", if one of the listed checkbox item is unchecked
+//     if(false == $(this).prop("checked")){
+//         //change "select all" checked status to false
+//         $(".jsCheckboxAll").prop("checked", false)
+//     }
+//
+//     //check "select all" if all checkbox items are checked
+//     if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length ){
+//         $(".jsCheckboxAll").prop("checked", true)
+//     }
+// })
+//
+// //Select entire table row
+// $(".table-clickable tbody tr").click(function(e) {
+//     if (e.target.type == "checkbox") {
+//         // stop the bubbling to prevent firing the rows click event
+//         e.stopPropagation()
+//     } else {
+//         // Click the
+//         if ($(this).hasClass("checked")) {
+//             $(this).find("input").click()
+//             $(this).removeClass("checked")
+//         } else {
+//             $(this).find("input").click()
+//             $(this).addClass("checked")
+//         }
+//     }
+// })
+//
+// //Whenever a checkbox in #multiselectform is clicked...
+//
+// $('#multiselectform input:checkbox').on("click", function () {
+//
+//     //initialise a mini databse of the starting values we'll need
+//
+//     var cat1Count = 0;
+//     var cat2Count = 0;
+//     var cat3Count = 0;
+//
+//     var isSelected = false;
+//
+//     //loop through all of the rows in the table body
+//
+//     $("#multiselectform tbody tr").each(function (index) {
+//
+//         //get the current risk category of the current row in the table
+//         var thisRiskCat = parseInt($(this).find('[data-riskcat]').data('riskcat'), 10);
+//
+//         //check if the checkbox in this row is checked
+//         if ($(this).find('input').is(':checked')) {
+//             isSelected = true
+//         } else {
+//             isSelected = false
+//         }
+//
+//         //if the checkbox is selected, then add 1 to the count variable for that category
+//         if (isSelected == true) {
+//             if (1 === thisRiskCat) {
+//                 cat1Count++
+//             } else if (2 === thisRiskCat) {
+//                 cat2Count++
+//             } else if (3 === thisRiskCat) {
+//                 cat3Count++
+//             }
+//         }
+//
+//     });
+//
+//
+//     //update the counter display
+//     $('#cat1Display').text(cat1Count);
+//     $('#cat2Display').text(cat2Count);
+//     $('#cat3Display').text(cat3Count);
+//
+// });
+
+
 // // auto-complete
 // !function (e, t) {'object' == typeof exports && 'object' == typeof module ? module.exports = t() : 'function' == typeof define && define.amd ? define([], t) : 'object' == typeof exports ? exports.accessibleAutocomplete = t() : e.accessibleAutocomplete = t()}(this, function () {
 //   return function (e) {
