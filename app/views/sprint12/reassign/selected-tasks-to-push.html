@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<div class="govuk-phase-banner">-->
+    <!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+    <!--Prototype-->
+    <!--</strong>-->
+    <!--<span class="govuk-phase-banner__text">-->
+    <!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+    <!--</span>-->
+    <!--</p>-->
+    <!--</div>-->
+
+    <div class="govuk-width-container">
+        <a href="tasks" class="govuk-back-link">Back</a>
+
+        <!--<div class="govuk-!-padding-bottom-4"></div>-->
+
+        <main class="govuk-main-wrapper">
+
+            <form action="confirmation-page" method="get" class="form">
+
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">
+                        <div class="panel panel-border-wide alert-success"
+                             style="border-color: #8F23B3;background-color: #fff; margin-bottom:38px; margin-top:10px;margin-left:0px;margin-right:0px;">
+                            <p>2 tasks selected</p>
+                        </div>
+                        <h2 class="govuk-heading-l">Reassign tasks</h2>
+
+                        <!--<div class="case-select-button" style="float: right; padding-right: 0px; margin-top: -65px;">-->
+                        <!--<a class="button button-secondary" type="submit"-->
+                        <!--href="pick-tasks#all-tasks">-->
+                        <!--Continue adding tasks-->
+                        <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="govuk-!-padding-bottom-4"></div>-->
+
+                        <!--start of table  -->
+                        <table>
+                            <thead>
+                            <tr>
+                                <!--<td class="row"><a href="#"-->
+                                <!--style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span-->
+                                <!--style="color:#005EA5;">▼</span>-->
+                                <!--</td>-->
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned
+                                    to</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Type</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Days
+                                    left</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;"></a>
+                                </td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <!--<td class="row">5 Jun 2018</td>-->
+                                <td class="row">University of Birmingham</td>
+                                <td class="row">Me</td>
+                                <td class="row">PPL<br><span class="govuk-body-s">Expires 1 Sep 2018</span></td>
+                                <td class="row">Project continuation</td>
+                                <td class="row">29 days</td>
+                                <td class="row"><a href="#">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <!--<td class="row">5 Jun 2018</td>-->
+                                <td class="row">University of Birmingham</td>
+                                <td class="row">Me</td>
+                                <td class="row">PPL<br><span class="govuk-body-s">Expires 9 Sep 2018</span>
+                                </td>
+                                <td class="row">Project continuation</td>
+                                <td class="row">29 days</td>
+                                <td class="row"><a href="#">Remove</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--end of table  -->
+
+                        <div class="govuk-!-padding-bottom-8"></div>
+
+                        <div class="govuk-grid-row">
+                            <div class="govuk-grid-column-one-third">
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-!-font-size-24 govuk-!-font-weight-bold"
+                                           for="select-officer">
+                                        Reassign to
+                                    </label>
+                                    <select class="govuk-select" id="select-officer" name="select-officer"
+                                            style="background-color:#fff">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="Me">Me</option>
+                                        <option value="Anne Clarke">Anne Clarke</option>
+                                        <option value="Nicola Jones">Nicola Jones</option>
+                                        <option value="Jonny Smith">Jonny Smith</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<Br>-->
+                        <!--<div class="govuk-grid-row">-->
+                        <!--<div class="govuk-grid-column-two-thirds">-->
+
+                        <!--<div class="govuk-form-group">-->
+                        <!--<label class="govuk-label govuk-!-font-weight-bold" for="more-detail">-->
+                        <!--Notes <span class="govuk-body">(optional)</span>-->
+                        <!--</label>-->
+                        <!--<span id="more-detail-hint" class="govuk-hint">-->
+                        <!--These notes will be sent to the new assignee.-->
+                        <!--</span>-->
+                        <!--<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"-->
+                        <!--aria-describedby="more-detail-hint"></textarea>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <br>
+                        <input class="govuk-button" type="submit" value="Confirm">
+                        <!--<a href="#"-->
+                        <!--style="margin-left: 20px;">Save and exit</a>-->
+            </form>
+        </main>
+
+    </div>
+</div>
+
+
+{% endblock %}
