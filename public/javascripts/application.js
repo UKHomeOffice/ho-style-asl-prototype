@@ -14,13 +14,13 @@ $(document).ready(function () {
 // NEW selector
 jQuery.expr[':'].Contains = function (a, i, m) {
     return jQuery(a).text().toUpperCase()
-            .indexOf(m[3].toUpperCase()) >= 0
+        .indexOf(m[3].toUpperCase()) >= 0
 }
 
 // OVERWRITES old selecor
 jQuery.expr[':'].contains = function (a, i, m) {
     return jQuery(a).text().toUpperCase()
-            .indexOf(m[3].toUpperCase()) >= 0
+        .indexOf(m[3].toUpperCase()) >= 0
 }
 
 // Passing data into a page
@@ -1005,7 +1005,7 @@ $(function () {
             }
 
             function a() {
-                for (var e = "", n = 0; P > n; n++)e += "subsection_content_" + n + " ";
+                for (var e = "", n = 0; P > n; n++) e += "subsection_content_" + n + " ";
                 C = t.find(".js-subsection-controls button"), C.attr("aria-controls", e)
             }
 
@@ -1101,7 +1101,8 @@ $(function () {
             }
 
             t.addClass("js-accordion-with-descriptions"), t.removeClass("js-hidden");
-            var C, I = t.find(".subsection__button"), F = t.find(".subsection__header"), P = t.find(".subsection__content").length, U = o();
+            var C, I = t.find(".subsection__button"), F = t.find(".subsection__header"),
+                P = t.find(".subsection__content").length, U = o();
             i(), s(), r(), a(), c(), d(), u(), g(), p()
         }
     }
@@ -1149,9 +1150,9 @@ $(function () {
             n.each(t.$anchors, function (i) {
                 var s = r[i], a = r[i + 1], c = n(s), u = n(a), l = t.getHeadingPosition(c);
                 if (l) {
-                    if (l = l.top, l -= 53, a)var d = t.getNextHeadingPosition(u).top;
+                    if (l = l.top, l -= 53, a) var d = t.getNextHeadingPosition(u).top;
                     var f = t.getDistanceBetweenHeadings(l, d);
-                    if (f)var h = e >= l && l + f > e; else var h = e >= l && e < o.top;
+                    if (f) var h = e >= l && l + f > e; else var h = e >= l && e < o.top;
                     h && t.setActiveItem(s)
                 }
             })
@@ -1163,6 +1164,7 @@ $(function () {
     }
 }(window.GOVUK.Modules, window), function (t) {
     "use strict";
+
     function e() {
         this.controller = null, this.view = null, this.start = function (t) {
             this.view = new n(t), this.controller = new o(this.view), this.controller.init()
@@ -1262,55 +1264,6 @@ $(function () {
     GOVUK.modules.start()
 }), window.GOVUK.stickAtTopWhenScrolling.init(), window.GOVUK.stopScrollingAtFooter.addEl($(".js-stick-at-top-when-scrolling"));
 
-// Select all checkbox change
-$(".jsCheckboxAll").change(function() {
-    // Change all ".jsCheckbox" checked status
-    $(".jsCheckbox").prop("checked", $(this).prop("checked"))
-
-    // Toggle checked class on other checkboxes
-    if($(this).prop("checked")) {
-        $(".jsCheckbox").parents("tr").addClass("checked")
-    } else {
-        $(".jsCheckbox").parents("tr").removeClass("checked")
-    }
-})
-
-//".jsCheckbox" change
-$(".jsCheckbox").change(function(){
-    $(this).parents("tr").toggleClass("checked")
-
-    //uncheck "select all", if one of the listed checkbox item is unchecked
-    if(false == $(this).prop("checked")){
-        //change "select all" checked status to false
-        $(".jsCheckboxAll").prop("checked", false)
-    }
-
-    //check "select all" if all checkbox items are checked
-    if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length ){
-        $(".jsCheckboxAll").prop("checked", true)
-    }
-})
-
-//Select entire table row
-$(".table-clickable tbody tr").click(function(e) {
-    if (e.target.type == "checkbox") {
-        // stop the bubbling to prevent firing the rows click event
-        e.stopPropagation()
-    } else {
-        // Click the
-        if ($(this).hasClass("checked")) {
-            $(this).find("input").click()
-            $(this).removeClass("checked")
-        } else {
-            $(this).find("input").click()
-            $(this).addClass("checked")
-        }
-    }
-})
-
-
-
-
 // // Select all checkbox change
 // $(".jsCheckboxAll").change(function() {
 //     // Change all ".jsCheckbox" checked status
@@ -1356,54 +1309,105 @@ $(".table-clickable tbody tr").click(function(e) {
 //         }
 //     }
 // })
-//
-// //Whenever a checkbox in #multiselectform is clicked...
-//
-// $('#multiselectform input:checkbox').on("click", function () {
-//
-//     //initialise a mini databse of the starting values we'll need
-//
-//     var cat1Count = 0;
-//     var cat2Count = 0;
-//     var cat3Count = 0;
-//
-//     var isSelected = false;
-//
-//     //loop through all of the rows in the table body
-//
-//     $("#multiselectform tbody tr").each(function (index) {
-//
-//         //get the current risk category of the current row in the table
-//         var thisRiskCat = parseInt($(this).find('[data-riskcat]').data('riskcat'), 10);
-//
-//         //check if the checkbox in this row is checked
-//         if ($(this).find('input').is(':checked')) {
-//             isSelected = true
-//         } else {
-//             isSelected = false
-//         }
-//
-//         //if the checkbox is selected, then add 1 to the count variable for that category
-//         if (isSelected == true) {
-//             if (1 === thisRiskCat) {
-//                 cat1Count++
-//             } else if (2 === thisRiskCat) {
-//                 cat2Count++
-//             } else if (3 === thisRiskCat) {
-//                 cat3Count++
-//             }
-//         }
-//
-//     });
-//
-//
-//     //update the counter display
-//     $('#cat1Display').text(cat1Count);
-//     $('#cat2Display').text(cat2Count);
-//     $('#cat3Display').text(cat3Count);
-//
-// });
 
+//Select all checkboxes
+function selectAll() {
+    var items = document.getElementsByName('acs');
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox')
+            items[i].checked = true;
+    }
+}
+
+function UnSelectAll() {
+    var items = document.getElementsByName('acs');
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox')
+            items[i].checked = false;
+    }
+}
+
+
+//Tabs
+$('.js-tabs').addClass('tabs');
+
+// hide all of the tab content for now
+$('.tab-content').hide();
+//show the first tab and content
+$('.tabs').each(function () {
+    $(this).find('.tab-content:first').show();
+    $(this).find('ul li:first').addClass('active');
+});
+
+// click function for tabs
+$('.tabs__link').click(function (e) {
+    e.preventDefault();
+
+    var tabs = $(this).parents('.tabs');
+    var link = $(this);
+    var currentTab = link.attr('href');
+
+    // remove active class from nav and add to newly selected tab
+    tabs.find('li').removeClass('active');
+    link.parent('li').addClass('active');
+
+    // hide all of the tab content and show newly selected then update hash in URL
+    tabs.find('.tab-content').hide();
+    $(currentTab).show();
+    history.pushState({}, '', currentTab);
+});
+
+// check for hash in url and open that tab if its there
+var hash = window.location.hash;
+if (hash) {
+    $('.tabs__link[href="' + hash + '"]').click();
+}
+
+// Select all checkbox change
+$(".jsCheckboxAll").change(function () {
+    // Change all ".jsCheckbox" checked status
+    $(".jsCheckbox").prop("checked", $(this).prop("checked"))
+
+    // Toggle checked class on other checkboxes
+    if ($(this).prop("checked")) {
+        $(".jsCheckbox").parents("tr").addClass("checked")
+    } else {
+        $(".jsCheckbox").parents("tr").removeClass("checked")
+    }
+})
+
+//".jsCheckbox" change
+$(".jsCheckbox").change(function () {
+    $(this).parents("tr").toggleClass("checked")
+
+    //uncheck "select all", if one of the listed checkbox item is unchecked
+    if (false == $(this).prop("checked")) {
+        //change "select all" checked status to false
+        $(".jsCheckboxAll").prop("checked", false)
+    }
+
+    //check "select all" if all checkbox items are checked
+    if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length) {
+        $(".jsCheckboxAll").prop("checked", true)
+    }
+})
+
+//Select entire table row
+$(".table-clickable tbody tr").click(function (e) {
+    if (e.target.type == "checkbox") {
+        // stop the bubbling to prevent firing the rows click event
+        e.stopPropagation()
+    } else {
+        // Click the
+        if ($(this).hasClass("checked")) {
+            $(this).find("input").click()
+            $(this).removeClass("checked")
+        } else {
+            $(this).find("input").click()
+            $(this).addClass("checked")
+        }
+    }
+})
 
 // // auto-complete
 // !function (e, t) {'object' == typeof exports && 'object' == typeof module ? module.exports = t() : 'function' == typeof define && define.amd ? define([], t) : 'object' == typeof exports ? exports.accessibleAutocomplete = t() : e.accessibleAutocomplete = t()}(this, function () {
