@@ -83,7 +83,7 @@ Research and testing with animals prototype
                     <ul class="govuk-tabs__list">
                         <li class="govuk-tabs__list-item">
                             <a class="govuk-tabs__tab" style="background-color: #F3F3F3" href="#my-tasks">
-                                My tasks (0)
+                                My tasks (7)
                             </a>
                         </li>
                         <li class="govuk-tabs__list-item">
@@ -94,35 +94,67 @@ Research and testing with animals prototype
                     </ul>
 
                     <section class="govuk-tabs" id="my-tasks">
-                        <div class="govuk-!-padding-bottom-6"></div>
-                        <!--START tab 1 div -->
-                        <table>
-                            <thead>
-                            <tr>
-                                <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span
-                                        style="color:#005EA5;">▼</span>
+
+                        <form action="selected-tasks-to-push" method="get" class="form">
+                            <div class="govuk-!-padding-bottom-6"></div>
+
+                            <p style="font-size: 20px;"> Select tasks to reassign them.</p>
+                            <div class="case-select-button"
+                                 style="float: right; padding-right: 0px; margin-top: -50px;">
+                                <input class="govuk-button" type="submit"
+                                       value="Reassign">
+                            </div>
+
+                            <!--START tab 1 div -->
+                            <table class="table-clickable">
+                                <tbody>
+                                <tr>
+                                    <th style="max-width: 60px;"></th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Received<span
+                                            style="color:#005EA5;">▼</span></th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Establishment
+                                    </th>
+                                    <!--<th style="color:#005EA5; font-weight:bold; text-decoration:none;">-->
+                                        <!--Assigned to-->
+                                    <!--</th>-->
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Licence
+                                    </th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Type
+                                    </th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Days left
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-1">
+                                            <label for="radio-1">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">5 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">Area amendment</a>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-2">
+                                        <label for="radio-2">
+                                            &nbsp;
+                                        </label>
+                                    </div>
                                 </td>
-                                <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
-                                </td>
-                                <!--<td class="row"><a href="#"-->
-                                                   <!--style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned to</a>-->
-                                <!--</td>-->
-                                <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
-                                </td>
-                                <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Type</a>
-                                </td>
-                                <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Days
-                                    left</a>
-                                </td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">University of Birmingham</td>
                                 <!--<td class="row">Barry Taylor</td>-->
@@ -130,71 +162,117 @@ Research and testing with animals prototype
                                 <td class="row"><a href="#">New area</a>
                                 <td class="row">-</td>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td class="row">4 Jul 2018</td>
-                                <td class="row">Agrochemex Environmental <br> Ltd</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PEL</td>
-                                <td class="row"><a href="#">New area</a>
-                                <td class="row">-</td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="row">3 Jun 2018</td>
-                                <td class="row">University of Birmingham</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PEL</td>
-                                <td class="row"><a href="#">New named person</a>
-                                <td class="row">-</td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="row">2 Jun 2018</td>
-                                <td class="row">University of Birmingham</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PEL</td>
-                                <td class="row"><a href="decision">Area amendment</a>
-                                <td class="row">-</td>
-                            </tr>
-                            <tr>
-                                <td class="row">1 Jun 2018</td>
-                                <td class="row">University of Birmingham</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PPL<br><span class="govuk-body-s">Expires 1 Sep 2018</span>
-                                </td>
-                                <td class="row"><a href="#">Project continuation</a></td>
-                                <td class="row">29 days</td>
-                            </tr>
-                            <tr>
-                                <td class="row">1 Jun 2018</td>
-                                <td class="row">University of Birmingham</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PIL<br><span class="govuk-body-s"></span>
-                                </td>
-                                <td class="row"><a href="#">New application</a></td>
-                                <td class="row">10 days</td>
-                            </tr>
-                            <tr>
-                                <td class="row">1 Jun 2018</td>
-                                <td class="row">University of Birmingham</td>
-                                <!--<td class="row">Barry Taylor</td>-->
-                                <td class="row">PIL
-                                </td>
-                                <td class="row"><a href="#">Revocation</a></td>
-                                <td class="row govuk-body govuk-!-font-weight-bold" style="color: #b10e1e">Overdue</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <!--end tab 1 div  -->
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-3">
+                                            <label for="radio-3">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">4 Jul 2018</td>
+                                    <td class="row">Agrochemex Environmental <br> Ltd</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">New area</a>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-4">
+                                            <label for="radio-4">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">3 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">New named person</a>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-5">
+                                            <label for="radio-5">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">2 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">Area amendment</a>
+                                    <td class="row">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-6">
+                                            <label for="radio-6">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">1 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PPL<br><span class="govuk-body-s">Expires 1 Sep 2018</span>
+                                    </td>
+                                    <td class="row"><a href="#">Project continuation</a></td>
+                                    <td class="row">29 days</td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-7">
+                                            <label for="radio-7">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">1 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PPL<br><span class="govuk-body-s">Expires 9 Sep 2018</span>
+                                    </td>
+                                    <td class="row"><a href="#">Project continuation</a></td>
+                                    <td class="row">29 days</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!--end tab 1 div  -->
 
+                        </form>
                     </section>
+
                     <section class="govuk-tabs" id="all-tasks">
-                        <div class="govuk-!-padding-bottom-6"></div>
+
+                        <form action="selected-tasks-to-pick" method="get" class="form">
+                            <div class="govuk-!-padding-bottom-6"></div>
+
+                            <p style="font-size: 20px;"> Select tasks to reassign them.</p>
+                            <div class="case-select-button"
+                                 style="float: right; padding-right: 0px; margin-top: -50px;">
+                                <input class="govuk-button" type="submit"
+                                       value="Reassign">
+                            </div>
+
                         <!--START tab 2 div -->
                         <table>
                             <thead>
                             <tr>
+                                <table class="table-clickable">
+                                    <tbody>
+                                    <tr>
+                                        <th style="max-width: 60px;"></th>
                                 <td class="row"><a href="#"
                                                    style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span
                                         style="color:#005EA5;">▼</span>
@@ -203,7 +281,8 @@ Research and testing with animals prototype
                                                    style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
                                 </td>
                                 <td class="row"><a href="#"
-                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned to</a>
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned
+                                    to</a>
                                 </td>
                                 <td class="row"><a href="#"
                                                    style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
@@ -219,6 +298,14 @@ Research and testing with animals prototype
                             </thead>
                             <tbody>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-1">
+                                        <label for="radio-1">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">University of Glasgow</td>
                                 <td class="row">Nicola Jones</td>
@@ -228,6 +315,14 @@ Research and testing with animals prototype
                                 </td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-2">
+                                        <label for="radio-2">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jul 2018</td>
                                 <td class="row">Churchill Applied <br> Biotechnology Limited</td>
                                 <td class="row">Nicola Jones</td>
@@ -237,8 +332,16 @@ Research and testing with animals prototype
                                 </td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-3">
+                                        <label for="radio-3">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jul 2018</td>
-                                <td class="row">Agrochemex Environmental <br> Ltd</td>
+                                <td class="row">Agrochemex <br> </br>Environmental Ltd</td>
                                 <td class="row">Jonny Smith</td>
                                 <td class="row">PEL</td>
                                 <td class="row"><a href="#">New area</a>
@@ -246,6 +349,14 @@ Research and testing with animals prototype
                                 </td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-4">
+                                        <label for="radio-4">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">Cardiff University</td>
                                 <td class="row">Jonny Smith</td>
@@ -255,6 +366,14 @@ Research and testing with animals prototype
                                 </td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-5">
+                                        <label for="radio-5">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">Imperial College London</td>
                                 <td class="row">Jonny Smith</td>
@@ -264,14 +383,30 @@ Research and testing with animals prototype
                                 </td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-6">
+                                        <label for="radio-6">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">University of Cambridge</td>
                                 <td class="row">Anne Clarke</td>
-                                <td class="row">PIL</td>
-                                <td class="row"><a href="#">New application</a></td>
+                                <td class="row">PEL</td>
+                                <td class="row"><a href="#">Area amendment</a></td>
                                 <td class="row">20 days</td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-7">
+                                        <label for="radio-7">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">University of Cambridge</td>
                                 <td class="row">Anne Clarke</td>
@@ -280,6 +415,14 @@ Research and testing with animals prototype
                                 <td class="row">-</td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-8">
+                                        <label for="radio-8">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">Cardiff University</td>
                                 <td class="row">Jonny Smith</td>
@@ -289,6 +432,14 @@ Research and testing with animals prototype
                                 <td class="row">20 days</td>
                             </tr>
                             <tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-9">
+                                        <label for="radio-9">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
                                 <td class="row">5 Jun 2018</td>
                                 <td class="row">Cardiff University</td>
                                 <td class="row">Jonny Smith</td>
@@ -298,9 +449,10 @@ Research and testing with animals prototype
                                 <td class="row">20 days</td>
                             </tr>
                             </tbody>
-                        </table>
-                        <!--end tab 2 div  -->
+                                </table>
+                                <!--end tab 2 div  -->
 
+                        </form>
                     </section>
                 </div>
             </div>
