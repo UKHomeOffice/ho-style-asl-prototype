@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/views/sprint12/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-push.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-push.html" afterDir="false" />
     </list>
@@ -23,24 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="confirmation-page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page.html">
+      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint12/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selected-tasks-to-push.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-push.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="83">
+              <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -100,10 +89,10 @@
         <option value="$PROJECT_DIR$/app/assets/sass/application.scss" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/new-tasks.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page-me.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint12/homepage.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-push.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/homepage.html" />
       </list>
     </option>
   </component>
@@ -130,7 +119,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1355" />
+    <option name="width" value="1401" />
     <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -246,19 +235,19 @@
       <workItem from="1531496471654" duration="14883000" />
       <workItem from="1531555791041" duration="747000" />
       <workItem from="1531561429379" duration="1048000" />
-      <workItem from="1531754674017" duration="27457000" />
+      <workItem from="1531754674017" duration="28402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44135000" />
+    <option name="totallyTimeSpent" value="45080000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1355" height="829" extended-state="0" />
+    <frame x="0" y="23" width="1401" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19115442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1942029" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -628,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/new-tasks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -667,33 +649,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="290">
+          <caret line="30" column="128" selection-start-line="30" selection-start-column="128" selection-end-line="30" selection-end-column="128" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-push.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="175">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/selected-tasks-to-pick.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
         </state>
       </provider>
     </entry>
