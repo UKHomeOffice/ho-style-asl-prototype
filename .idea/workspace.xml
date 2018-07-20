@@ -22,11 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="decision.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sprint12/decision.html">
+      <file leaf-file-name="check-your-answers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1080">
+              <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check-your-answers-approve.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -39,8 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sprint12/sign-in.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint12/decision-sectioned.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/tasks-completed.html" />
         <option value="$PROJECT_DIR$/app/assets/sass/components/_card.scss" />
         <option value="$PROJECT_DIR$/app/views/sprint12/decision-interruption.html" />
@@ -89,7 +96,9 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign-single-task.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/select-task-to-reassign.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/check-your-answers.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/decision.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html" />
       </list>
     </option>
   </component>
@@ -115,9 +124,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="410" />
+    <option name="x" value="331" />
     <option name="y" value="23" />
-    <option name="width" value="1076" />
+    <option name="width" value="1124" />
     <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -159,6 +168,24 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="sprint12" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ho-style-asl-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ho-style-asl-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ho-style-asl-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ho-style-asl-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ho-style-asl-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ho-style-asl-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -176,17 +203,17 @@
     <property name="SearchEverywhereHistoryKey" value="govuk-box-highlight confirm-page new&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/sprint12/_old" />
-      <recent name="$PROJECT_DIR$/app/views/sprint12" />
-      <recent name="$PROJECT_DIR$/app/views/sprint12/Folder-layout" />
-      <recent name="$PROJECT_DIR$/app/views/sprint12/Allocate" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/sprint12" />
       <recent name="$PROJECT_DIR$/app/views/sprint12/reassign" />
       <recent name="$PROJECT_DIR$/app/assets/sass/components" />
       <recent name="$PROJECT_DIR$/app/views/sprint12/allocate" />
+      <recent name="$PROJECT_DIR$/app/views/sprint12/Allocate" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/sprint12/_old" />
+      <recent name="$PROJECT_DIR$/app/views/sprint12" />
+      <recent name="$PROJECT_DIR$/app/views/sprint12/Folder-layout" />
       <recent name="$PROJECT_DIR$/app/views/sprint12/Allocate" />
     </key>
   </component>
@@ -226,19 +253,19 @@
       <workItem from="1531555791041" duration="747000" />
       <workItem from="1531561429379" duration="1048000" />
       <workItem from="1531754674017" duration="36185000" />
-      <workItem from="1532087695611" duration="721000" />
+      <workItem from="1532087695611" duration="4575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53584000" />
+    <option name="totallyTimeSpent" value="57438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="410" y="23" width="1076" height="829" extended-state="0" />
+    <frame x="331" y="23" width="1124" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22559242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20489573" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -265,28 +292,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/task-completed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="172" column="77" selection-start-line="172" selection-start-column="77" selection-end-line="172" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/task-rejected.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/confirmation-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="86" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/table-multiselect.js" />
     <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.js" />
     <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.css" />
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/_old/tasks.html">
@@ -360,13 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="254" column="25" lean-forward="true" selection-start-line="247" selection-start-column="20" selection-end-line="254" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/check-your-answers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -525,10 +523,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/views/examples/confirmation-page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/views/examples/check-your-answers-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="168" lean-forward="true" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/check-your-answers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/decision.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="380">
+          <caret line="112" column="134" selection-start-line="112" selection-start-column="134" selection-end-line="112" selection-end-column="134" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
         </state>
       </provider>
     </entry>
