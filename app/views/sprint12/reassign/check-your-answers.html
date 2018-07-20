@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+        Prototype
+    </strong>
+        <span class="govuk-phase-banner__text">
+This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+</span>
+    </p>
+</div>
+
+<div class="govuk-width-container">
+    <a href="../amend" class="govuk-back-link">Back</a>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Reassign tasks</h2>
+
+            <div class="govuk-!-padding-bottom-4"></div>
+
+            <!--<h3 class="govuk-heading-m">-->
+            <!--What is your recommendation?-->
+            <!--</h3>-->
+
+            <dl class="app-check-your-answers app-check-your-answers--long">
+                <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                        Number of tasks
+                    </dt>
+                    <dd class="app-check-your-answers__answer" style="word-break: break-all">
+                        3
+                    </dd>
+                    <dd class="app-check-your-answers__change">
+                        <a href="#">
+                            Change
+                        </a>
+                    </dd>
+                </div>
+                <div class="app-check-your-answers__contents">
+                    <dt class="app-check-your-answers__question">
+                        Reassign to
+                    </dt>
+                    <dd class="app-check-your-answers__answer" style="word-break: break-all">
+                        {{ data['select-officer'] }}
+                    </dd>
+                    <dd class="app-check-your-answers__change">
+                        <a href="#">
+                            Change
+                        </a>
+                    </dd>
+                </div>
+                <!--<div class="app-check-your-answers__contents">-->
+                    <!--<dt class="app-check-your-answers__question">-->
+                        <!--Notes-->
+                    <!--</dt>-->
+                    <!--<dd class="app-check-your-answers__answer" style="word-break: break-all">-->
+                        <!--{{ data['more-detail'] }}-->
+                    <!--</dd>-->
+                    <!--<dd class="app-check-your-answers__change">-->
+                        <!--<a href="#">-->
+                            <!--Change-->
+                        <!--</a>-->
+                    <!--</dd>-->
+                <!--</div>-->
+            </dl>
+
+
+            <div class="govuk-!-padding-bottom-6"></div>
+
+            <a href="confirmation-page" role="button" class="govuk-button govuk-button">
+                Submit
+            </a>
+            <!--<br>-->
+            <!--<a href="#" class="govuk-link">Save and exit</a>-->
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -134,6 +134,7 @@ $govuk-typography-scale: (
 @import "components/search";
 @import "components/sortable-header";
 @import "components/card";
+@import "components/multiple-choice";
 
 // HOME OFFICE STYLES
 
@@ -873,3 +874,130 @@ details summary {
   margin-top: 0;
 }
 
+.panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  border-left-style: solid;
+  border-color: #bfc1c3;
+  padding: 0.78947em;
+  margin-bottom: 0.78947em;
+}
+
+.panel :first-child {
+  margin-top: 0;
+}
+
+.panel :only-child,
+.panel :last-child {
+  margin-bottom: 0;
+}
+
+.panel-border-wide {
+  border-left-width: 10px;
+}
+
+.panel-border-narrow {
+  border-left-width: 5px;
+}
+
+.form-group .panel-border-narrow {
+  float: left;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.form-group .panel-border-narrow:first-child {
+  margin-top: 10px;
+}
+
+.form-group .panel-border-narrow:last-child {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.inline .panel-border-narrow {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.badge {
+  background: #dee0e2;
+  color: #0b0c0c;
+  display: inline-block;
+  line-height: 1;
+  padding: calc(1.5 * 5px) calc(2.5 * 5px) calc(1.2 * 5px) calc(2.5 * 5px);
+  text-align: left;
+  margin: 0 calc(1.5 * 5px) 0 0;
+  text-decoration: none;
+}
+
+.badge--blue {
+  background: #005ea5;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: calc(1.5 * 5px) calc(2.5 * 5px) calc(1.2 * 5px) calc(2.5 * 5px);
+  text-align: left;
+  margin: 0 calc(1.5 * 5px) 0 0;
+  text-decoration: none;
+  //float: right;
+}
+
+.badge--red {
+  background: #b10e1e;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: calc(1.5 * 5px) calc(2.5 * 5px) calc(1.2 * 5px) calc(2.5 * 5px);
+  text-align: left;
+  margin: 0 calc(1.5 * 5px) 0 0;
+  text-decoration: none;
+}
+
+.notifications {
+  float: left;
+  margin-left: 8px;
+  margin-top: -5px;
+  display: block;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  -moz-border-radius: 17px;
+  /* or 50% */
+  border-radius: 17px;
+  /* or 50% */
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.notification-menu {
+  float: left;
+}
+
+.region-notification {
+  float: left;
+  display: block;
+  background-color: red;
+  padding: 5px 10px 4px 10px;
+  text-align: center;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.region-list {
+  float: left;
+  clear: left;
+}
+
+.notification-reason {
+  margin-left: 10px;
+  margin-top: 8px;
+  float: left;
+}
