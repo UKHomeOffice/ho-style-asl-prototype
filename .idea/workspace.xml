@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="" />
+    <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sprint12/index.html">
+      <file leaf-file-name="check-your-answers-approve.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="484">
+              <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -83,11 +86,11 @@
         <option value="$PROJECT_DIR$/app/views/sprint12/select-task-to-reassign.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/check-your-answers.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/decision.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/confirmation-page-all.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/selected-all-tasks-to-push.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign/pushed-all-tasks.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/index.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html" />
       </list>
     </option>
   </component>
@@ -113,7 +116,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
+    <option name="x" value="290" />
     <option name="y" value="23" />
     <option name="width" value="1124" />
     <option name="height" value="829" />
@@ -242,19 +245,19 @@
       <workItem from="1531555791041" duration="747000" />
       <workItem from="1531561429379" duration="1048000" />
       <workItem from="1531754674017" duration="36185000" />
-      <workItem from="1532087695611" duration="5870000" />
+      <workItem from="1532087695611" duration="5992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58733000" />
+    <option name="totallyTimeSpent" value="58855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="23" width="1124" height="829" extended-state="0" />
+    <frame x="290" y="23" width="1124" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20489573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2529465" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -503,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -596,6 +592,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/check-your-answers-approve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>
