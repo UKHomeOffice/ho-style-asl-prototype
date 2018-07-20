@@ -1425,6 +1425,29 @@ function UnSelectAll() {
             }
         })
 
+//Add another
+$(function() {
+    var scntDiv = $('#p_scents');
+    var i = $('#p_scents p').size() + 1;
+
+    $('#addScnt').live('click', function() {
+        $('<label class="govuk-label" for="p_scnts"></label><textarea class="govuk-textarea" id="p_scnt" name="p_scnt_' + i +'" rows="2" aria-describedby="more-detail-hint"></textarea> <a href="#" id="remScnt">Remove</a>').appendTo(scntDiv);
+        i++;
+        return false;
+    });
+
+    $('#remScnt').live('click', function() {
+        if( i > 2 ) {
+            $(this).parents('p').remove();
+            i--;
+        }
+        return false;
+    });
+});
+
+
+
+
 // // auto-complete
 // !function (e, t) {'object' == typeof exports && 'object' == typeof module ? module.exports = t() : 'function' == typeof define && define.amd ? define([], t) : 'object' == typeof exports ? exports.accessibleAutocomplete = t() : e.accessibleAutocomplete = t()}(this, function () {
 //   return function (e) {

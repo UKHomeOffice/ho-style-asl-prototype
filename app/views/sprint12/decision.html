@@ -74,7 +74,7 @@ Research and testing with animals prototype
                     <td class="govuk-table__cell "><a href="#" class="govuk-link govuk-link--no-visited-state">Gareth
                         Tindall</a></td>
                     <td class="govuk-table__cell "><a href="#" class="govuk-link govuk-link--no-visited-state">Gareth
-                        Tindalll</a></td>
+                        Tindall</a></td>
                 </tr>
             </table>
 
@@ -121,15 +121,39 @@ Research and testing with animals prototype
                     <label class="govuk-heading-m" for="change-restrictions">
                         Change current restrictions
                     </label>
-                    <span id="more-detail-hint" class="govuk-hint" style="margin-top: -12px">
-    Phil - content to instruct and reassure the users what to do or type below
-  </span>
-                    <textarea class="govuk-textarea" id="change-restrictions" name="change-restrictions" rows="5"
-                              aria-describedby="more-detail-hint">1. Perfusion under general anesthetic & Schedule 1 killing
-2. Monday to Thursday only</textarea>
+
+                    <div id="p_scents">
+                        <label class="govuk-label" for="p_scnts">
+                            Restriction
+                        </label>
+                        <a href="decision-remove#anchor" style="float: right; padding-right: 0px; margin-top: -30px;">Remove</a>
+                        <textarea class="govuk-textarea" id="p_scnt" name="p_scnt" rows="2"
+                                  aria-describedby="more-detail-hint">Perfusion under general anesthetic & Schedule 1 killing
+                    </textarea>
+                    </div>
+
+                    <!--<input class="govuk-input govuk-!-width-three-quarters" id="restriction-1"-->
+                    <!--name="restriction-1" type="text"-->
+                    <!--aria-describedby="restriction-hint"-->
+                    <!--value="Perfusion under general anesthetic & Schedule 1 killing">-->
+
+
+                    <label class="govuk-label" for="restriction-1">
+                        Restriction
+                    </label>
+                    <a href="#" style="float: right; padding-right: 0px; margin-top: -30px;">Remove</a>
+                    <textarea class="govuk-textarea" id="restriction-1" name="restriction-1" rows="2"
+                              aria-describedby="more-detail-hint">Monday to Thursday only
+                    </textarea>
+
+
+                    <a href="#" id="addScnt">Add another restriction</a>
+
+
                 </div>
 
-                <div class="govuk-!-padding-bottom-4"></div>
+                <!--<hr class="govuk-section-break govuk-section-break&#45;&#45;xl govuk-section-break&#45;&#45;visible">-->
+                <div class="govuk-!-padding-bottom-7"></div>
 
                 <div class="govuk-form-group">
                     <h3 class="govuk-heading-m">What is your decision?</h3>
