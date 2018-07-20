@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="" />
+    <list default="true" id="e79411a4-2213-4171-b54d-87ecc3d0ae42" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/views/sprint12/decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sprint12/decision.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,7 +21,17 @@
     <favorites_list name="ho-style-asl-prototype" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="decision.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sprint12/decision.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +55,6 @@
         <option value="$PROJECT_DIR$/app/views/sprint12/task-completed.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/tasks.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/tasks-assign-to-me.html" />
-        <option value="$PROJECT_DIR$/app/views/sprint12/decision.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/confirmation-page.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/task-rejected.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/task-returned.html" />
@@ -78,6 +89,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/sprint12/reassign-single-task.html" />
         <option value="$PROJECT_DIR$/app/views/sprint12/select-task-to-reassign.html" />
+        <option value="$PROJECT_DIR$/app/views/sprint12/decision.html" />
       </list>
     </option>
   </component>
@@ -116,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +163,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,17 +226,19 @@
       <workItem from="1531555791041" duration="747000" />
       <workItem from="1531561429379" duration="1048000" />
       <workItem from="1531754674017" duration="36185000" />
+      <workItem from="1532087695611" duration="721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52863000" />
+    <option name="totallyTimeSpent" value="53584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
+    <frame x="410" y="23" width="1076" height="829" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20225511" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22559242" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -235,12 +249,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.08743169" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -262,10 +276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -273,34 +283,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="26" column="86" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/table-multiselect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="46" lean-forward="true" selection-start-line="1" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="70" lean-forward="true" selection-start-line="24" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3697">
-          <caret line="3846" lean-forward="true" selection-start-line="3727" selection-end-line="3846" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/table-multiselect.js" />
+    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.js" />
+    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK_files/application.css" />
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/_old/tasks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -308,75 +296,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="142" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Approved cases - GOV.UK.html" />
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/pick-tasks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="172" column="97" selection-start-line="172" selection-start-column="48" selection-end-line="172" selection-end-column="97" />
-          <folding>
-            <element signature="e#2694#2700#0" expanded="true" />
-            <element signature="e#2701#2707#0" expanded="true" />
-            <element signature="e#2779#2785#0" expanded="true" />
-            <element signature="e#2786#2792#0" expanded="true" />
-            <element signature="e#2950#2956#0" expanded="true" />
-            <element signature="e#2977#2983#0" expanded="true" />
-            <element signature="e#3163#3169#0" expanded="true" />
-            <element signature="e#3190#3196#0" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#thead#0;n#table#0;n#section#1;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#thead#0;n#table#0;n#section#1;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/selected_cases_files/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2119">
-          <caret line="1450" lean-forward="true" selection-start-line="1403" selection-end-line="1450" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/selected_cases.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="204" column="63" lean-forward="true" selection-start-line="200" selection-start-column="16" selection-end-line="204" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Add_referral_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="137" column="6" lean-forward="true" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/add-notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/selected_cases_files/application.css" />
+    <entry file="file://$USER_HOME$/Desktop/selected_cases.html" />
+    <entry file="file://$USER_HOME$/Desktop/Add_referral_details.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/add-notes.html" />
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/task-returned.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/decision.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="172" column="68" selection-start-line="172" selection-start-column="46" selection-end-line="172" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -394,13 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/filter-by-PIL-x.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="191" column="60" lean-forward="true" selection-start-line="185" selection-start-column="31" selection-end-line="191" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/filter-by-PIL-x.html" />
     <entry file="file://$PROJECT_DIR$/app/assets/sass/components/_multiple-choice.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4575">
@@ -408,37 +337,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/prism.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3619" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/prism.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2017">
-          <caret line="252" lean-forward="true" selection-start-line="252" selection-end-line="252" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/table-multiselect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/icons.css" />
+    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/prism.css" />
+    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/prism.js" />
+    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select_files/table-multiselect.js" />
+    <entry file="file://$USER_HOME$/Desktop/Pattern - Table multi-select.htm" />
     <entry file="file://$PROJECT_DIR$/app/views/sprint12/reassign/filter-by-PIL.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -457,10 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="254" column="25" lean-forward="true" selection-start-line="247" selection-start-column="20" selection-end-line="254" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#section#0;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,13 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="170" column="114" lean-forward="true" selection-start-line="170" selection-start-column="100" selection-end-line="170" selection-end-column="114" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#h3#1;n#form#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#h3#1;n#form#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#tbody#0;n#table#0;n#h3#1;n#form#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7225#7231#0" expanded="true" />
-            <element signature="e#7232#7238#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -496,17 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding>
-            <element signature="e#6913#6919#0" expanded="true" />
-            <element signature="e#6920#6926#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#section#0;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#7891#7897#0" expanded="true" />
-            <element signature="e#7898#7904#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#1;n#tbody#0;n#table#0;n#form#0;n#section#0;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#9112#9118#0" expanded="true" />
-            <element signature="e#9119#9125#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#section#0;n#div#4;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -521,9 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="30" column="128" selection-start-line="30" selection-start-column="128" selection-end-line="30" selection-end-column="128" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,10 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,21 +456,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery-1.11.3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4118">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-4118" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/auto-store-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Desktop/untitled folder/Pattern - Table multi-select.htm">
       <provider selected="true" editor-type-id="text-editor">
@@ -630,10 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#details#1;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#details#2;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,10 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="1327" column="1" lean-forward="true" selection-start-line="1312" selection-end-line="1327" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#48#54#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,6 +522,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sprint12/decision.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
