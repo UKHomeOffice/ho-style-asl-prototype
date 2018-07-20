@@ -1327,87 +1327,103 @@ function UnSelectAll() {
     }
 }
 
+// //Toggle all checkboxes
+// function selectAll() {
+//     if (document.getElementById('radio-all').checked) {
+//         var items = document.getElementsByName('acs');
+//         for (var i = 0; i < items.length; i++) {
+//             if (items[i].type == 'checkbox')
+//                 items[i].checked = true;
+//         }
+//     else
+//         {
+//             var items = document.getElementsByName('acs');
+//             for (var i = 0; i < items.length; i++) {
+//                 if (items[i].type == 'checkbox')
+//                     items[i].checked = false;
+//             }
+//         }
 
 //Tabs
-$('.js-tabs').addClass('tabs');
+        $('.js-tabs').addClass('tabs');
 
 // hide all of the tab content for now
-$('.tab-content').hide();
+        $('.tab-content').hide();
 //show the first tab and content
-$('.tabs').each(function () {
-    $(this).find('.tab-content:first').show();
-    $(this).find('ul li:first').addClass('active');
-});
+        $('.tabs').each(function () {
+            $(this).find('.tab-content:first').show();
+            $(this).find('ul li:first').addClass('active');
+        });
 
 // click function for tabs
-$('.tabs__link').click(function (e) {
-    e.preventDefault();
+        $('.tabs__link').click(function (e) {
+            e.preventDefault();
 
-    var tabs = $(this).parents('.tabs');
-    var link = $(this);
-    var currentTab = link.attr('href');
+            var tabs = $(this).parents('.tabs');
+            var link = $(this);
+            var currentTab = link.attr('href');
 
-    // remove active class from nav and add to newly selected tab
-    tabs.find('li').removeClass('active');
-    link.parent('li').addClass('active');
+            // remove active class from nav and add to newly selected tab
+            tabs.find('li').removeClass('active');
+            link.parent('li').addClass('active');
 
-    // hide all of the tab content and show newly selected then update hash in URL
-    tabs.find('.tab-content').hide();
-    $(currentTab).show();
-    history.pushState({}, '', currentTab);
-});
+            // hide all of the tab content and show newly selected then update hash in URL
+            tabs.find('.tab-content').hide();
+            $(currentTab).show();
+            history.pushState({}, '', currentTab);
+        });
 
 // check for hash in url and open that tab if its there
-var hash = window.location.hash;
-if (hash) {
-    $('.tabs__link[href="' + hash + '"]').click();
-}
+        var hash = window.location.hash;
+        if (hash) {
+            $('.tabs__link[href="' + hash + '"]').click();
+        }
 
 // Select all checkbox change
-$(".jsCheckboxAll").change(function () {
-    // Change all ".jsCheckbox" checked status
-    $(".jsCheckbox").prop("checked", $(this).prop("checked"))
+        $(".jsCheckboxAll").change(function () {
+            // Change all ".jsCheckbox" checked status
+            $(".jsCheckbox").prop("checked", $(this).prop("checked"))
 
-    // Toggle checked class on other checkboxes
-    if ($(this).prop("checked")) {
-        $(".jsCheckbox").parents("tr").addClass("checked")
-    } else {
-        $(".jsCheckbox").parents("tr").removeClass("checked")
-    }
-})
+            // Toggle checked class on other checkboxes
+            if ($(this).prop("checked")) {
+                $(".jsCheckbox").parents("tr").addClass("checked")
+            } else {
+                $(".jsCheckbox").parents("tr").removeClass("checked")
+            }
+        })
 
 //".jsCheckbox" change
-$(".jsCheckbox").change(function () {
-    $(this).parents("tr").toggleClass("checked")
+        $(".jsCheckbox").change(function () {
+            $(this).parents("tr").toggleClass("checked")
 
-    //uncheck "select all", if one of the listed checkbox item is unchecked
-    if (false == $(this).prop("checked")) {
-        //change "select all" checked status to false
-        $(".jsCheckboxAll").prop("checked", false)
-    }
+            //uncheck "select all", if one of the listed checkbox item is unchecked
+            if (false == $(this).prop("checked")) {
+                //change "select all" checked status to false
+                $(".jsCheckboxAll").prop("checked", false)
+            }
 
-    //check "select all" if all checkbox items are checked
-    if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length) {
-        $(".jsCheckboxAll").prop("checked", true)
-    }
-})
+            //check "select all" if all checkbox items are checked
+            if ($(".jsCheckbox:checked").length == $(".jsCheckbox").length) {
+                $(".jsCheckboxAll").prop("checked", true)
+            }
+        })
 
 //Select entire table row
-$(".table-clickable tbody tr").click(function (e) {
-    if (e.target.type == "checkbox") {
-        // stop the bubbling to prevent firing the rows click event
-        e.stopPropagation()
-    } else {
-        // Click the
-        if ($(this).hasClass("checked")) {
-            $(this).find("input").click()
-            $(this).removeClass("checked")
-        } else {
-            $(this).find("input").click()
-            $(this).addClass("checked")
-        }
-    }
-})
+        $(".table-clickable tbody tr").click(function (e) {
+            if (e.target.type == "checkbox") {
+                // stop the bubbling to prevent firing the rows click event
+                e.stopPropagation()
+            } else {
+                // Click the
+                if ($(this).hasClass("checked")) {
+                    $(this).find("input").click()
+                    $(this).removeClass("checked")
+                } else {
+                    $(this).find("input").click()
+                    $(this).addClass("checked")
+                }
+            }
+        })
 
 // // auto-complete
 // !function (e, t) {'object' == typeof exports && 'object' == typeof module ? module.exports = t() : 'function' == typeof define && define.amd ? define([], t) : 'object' == typeof exports ? exports.accessibleAutocomplete = t() : e.accessibleAutocomplete = t()}(this, function () {
