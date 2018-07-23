@@ -528,35 +528,36 @@ details summary {
   display: block;
 }
 
-.tab-container {
-  border-bottom: 1px solid #bfc1c3;
-  margin: 30px 0;
-  padding: 10px 0;
-}
-
-.tab {
-  font-size: 24px;
-  line-height: 1.25;
-  font-family: "nta", Arial, sans-serif;
-  font-weight: 700;
-  padding: 10px 20px;
-}
-
-.tab:first-of-type {
-  margin-left: 10px;
-}
-
-.tab--active {
-  border: 1px solid #bfc1c3;
-  background: white;
-  border-bottom: 0;
-}
-
-.tab--active, .tab--active:hover, .tab--active:visited {
-  color: #0b0c0c;
-  text-decoration: none;
-  pointer-events: none;
-}
+//.tab-container {
+//  border-bottom: 1px solid #bfc1c3;
+//  margin: 30px 0;
+//  padding: 10px 0;
+//}
+//
+//.tab {
+//  font-size: 24px;
+//  line-height: 1.25;
+//  font-family: "nta", Arial, sans-serif;
+//  font-weight: 700;
+//  padding: 10px 20px;
+//}
+//
+//.tab:first-of-type {
+//  margin-left: 10px;
+//}
+//
+//.tab--active {
+//  border: 1px solid #bfc1c3;
+//  background: white;
+//  border-bottom: 0;
+//}
+//
+//.tab--active, .tab--active:hover, .tab--active:visited {
+//  //color: #0b0c0c;
+//  color: #fff;
+//  text-decoration: none;
+//  pointer-events: none;
+//}
 
 .my-cases-view {
   display: none;
@@ -1001,3 +1002,34 @@ details summary {
   margin-top: 8px;
   float: left;
 }
+
+// HO new style tabs
+.tabs > ol, .tabs > ul {
+  @extend %contain-floats;
+  list-style: none;
+  margin: 0 -16px;
+  padding: 0;
+  border-top: 1px solid #ababab;
+
+  @include media(tablet) {
+    margin: 0;
+    border-top: 0;
+    border-bottom: 2px solid #ababab;
+  }
+}
+
+.tabs > ul li, .tabs > ol li {
+  margin: 0;
+
+  @include media(tablet) {
+    float: left;
+    margin: 0 3px 0 0;
+  }
+}
+
+
+// link entire table row
+//tr.hover {
+//  cursor: pointer;
+//  /* whatever other hover styles you want */
+//}

@@ -78,97 +78,85 @@ Research and testing with animals prototype
 
                 <div class="govuk-!-padding-bottom-7"></div>
 
-                <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+                <!--<div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">-->
 
-                    <ul class="govuk-tabs__list">
-                        <li class="govuk-tabs__list-item">
-                            <a class="govuk-tabs__tab" href="#my-tasks">
-                                My tasks (1)
-                            </a>
-                        </li>
-                        <li class="govuk-tabs__list-item">
-                            <a class="govuk-tabs__tab" href="#all-tasks">
-                                Team tasks (9)
-                            </a>
-                        </li>
+                <!--<ul class="govuk-tabs__list">-->
+                <!--<li class="govuk-tabs__list-item">-->
+                <!--<a class="govuk-tabs__tab" style="background-color: #FFFFFF" href="#my-tasks">-->
+                <!--My tasks (1)-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li class="govuk-tabs__list-item">-->
+                <!--<a class="govuk-tabs__tab" style="background-color: #DADADA" href="#all-tasks">-->
+                <!--Team tasks (9)-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+                <div class="js-tabs"> <!-- JS will add .tabs class -->
+                    <ul class="list list-bullet">
+                        <li><a class="tabs__link" href="#My-tasks">My tasks (1)</a></li>
+                        <li><a class="tabs__link" href="#Team-tasks">Team tasks (9)</a></li>
                     </ul>
 
-                    <section class="govuk-tabs" id="my-tasks">
-                        <div class="govuk-!-padding-bottom-6"></div>
-                        <h3 class="govuk-heading-m">My tasks</h3>
+                    <!--<section class="govuk-tabs" id="my-tasks">-->
+                    <!--<div class="govuk-!-padding-bottom-6"></div>-->
+                    <!--&lt;!&ndash;START tab 1 div &ndash;&gt;-->
 
-                        <form action="selected-all-tasks-to-push" method="get" class="form">
-                            <div class="govuk-!-padding-bottom-6"></div>
+                    <!-- Tab 1 -->
+                    <div id="My-tasks" class="tab-content">
+                        <h2 class="heading-medium">My tasks</h2>
+                        <table>
+                            <thead>
+                            <tr>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span
+                                        style="color:#005EA5;">▼</span>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
+                                </td>
+                                <!--<td class="row"><a href="#"-->
+                                <!--style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned to</a>-->
+                                <!--</td>-->
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Type</a>
+                                </td>
+                                <td class="row"><a href="#"
+                                                   style="color:#005EA5; font-weight:bold; text-decoration:none;">Days
+                                    left</a>
+                                </td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="row">5 Jun 2018</td>
+                                <td class="row">University of Birmingham</td>
+                                <!--<td class="row">Barry Taylor</td>-->
+                                <td class="row">PEL</td>
+                                <td class="row"><a href="decision">Area amendment</a><br><span
+                                        class="govuk-body-s">LG36</span></td>
+                                <td class="row">-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--end tab 1 div  -->
 
-                            <!--<p style="font-size: 20px;"> Select tasks to reassign them.</p>-->
-                            <div class="case-select-button"
-                                 style="float: right; padding-right: 0px; margin-top: -90px;">
-                                <input class="button-secondary" type="submit"
-                                       value="Reassign tasks to others">
-                            </div>
+                    <!--</section>-->
 
-                            <!--START tab 1 div -->
-                            <table style="margin-top: -20px;">
-                                <thead>
-                                <tr>
-                                    <td class="row"><a href="#"
-                                                       style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span
-                                            style="color:#005EA5;">▼</span>
-                                    </td>
-                                    <td class="row"><a href="#"
-                                                       style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
-                                    </td>
-                                    <!--<td class="row"><a href="#"-->
-                                    <!--style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned to</a>-->
-                                    <!--</td>-->
-                                    <td class="row"><a href="#"
-                                                       style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
-                                    </td>
-                                    <td class="row"><a href="#"
-                                                       style="color:#005EA5; font-weight:bold; text-decoration:none;">Type</a>
-                                    </td>
-                                    <td class="row"><a href="#"
-                                                       style="color:#005EA5; font-weight:bold; text-decoration:none;">Days
-                                        left</a>
-                                    </td>
-                                    <td class="row"></td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="row">5 Jun 2018</td>
-                                        <td class="row">University of Birmingham</td>
-                                        <!--<td class="row">Barry Taylor</td>-->
-                                        <td class="row">PEL</td>
-                                        <!--<td class="row">Area amendment<br><span-->
-                                                <!--class="govuk-body-s">LG36</span></td>-->
-                                        <td class="row"><a href="decision">Area amendment</a><br><span
-                                                class="govuk-body-s">LG36</span></td>
-                                        <td class="row">-</td>
-                                        <!--<td class="row"><a class="govuk-button" href="decision">Process</a></td>-->
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!--end tab 1 div  -->
+                    <!--<section class="govuk-tabs" id="all-tasks">-->
+                    <!--<div class="govuk-!-padding-bottom-6"></div>-->
+                    <!--&lt;!&ndash;START tab 2 div &ndash;&gt;-->
 
-                    </section>
 
-                    <section class="govuk-tabs" id="all-tasks">
-                        <div class="govuk-!-padding-bottom-6"></div>
-                        <h3 class="govuk-heading-m">Team tasks</h3>
-
-                        <form action="selected-all-tasks-to-push" method="get" class="form">
-                            <div class="govuk-!-padding-bottom-6"></div>
-
-                            <!--<p style="font-size: 20px;"> Select tasks to reassign them.</p>-->
-                            <div class="case-select-button"
-                                 style="float: right; padding-right: 0px; margin-top: -90px;">
-                                <input class="button-secondary" type="submit"
-                                       value="Reassign tasks">
-                            </div>
-
-                        <!--START tab 2 div -->
-                        <table style="margin-top: -20px;">
+                    <!-- Tab 2 -->
+                    <div id="Team-tasks" class="tab-content">
+                        <h2 class="heading-medium">Team tasks</h2>
+                        <table>
                             <thead>
                             <tr>
                                 <td class="row"><a href="#"
@@ -210,8 +198,8 @@ Research and testing with animals prototype
                                 <td class="row">University of Glasgow</td>
                                 <td class="row">Nicola Jones</td>
                                 <td class="row">PEL</td>
-                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">Room 57</span>
-                                </td>
+                                <td class="row"><a href="#">New area</a><br><span
+                                        class="govuk-body-s">Room 57</span></td>
                                 <td class="row">-</td>
                                 </td>
                             </tr>
@@ -220,7 +208,8 @@ Research and testing with animals prototype
                                 <td class="row">Agrochemex Environmental <br> Ltd</td>
                                 <td class="row">Jonny Smith</td>
                                 <td class="row">PEL</td>
-                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">LG-65</span></td>
+                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">LG-65</span>
+                                </td>
                                 <td class="row">-</td>
                                 </td>
                             </tr>
@@ -239,7 +228,8 @@ Research and testing with animals prototype
                                 <td class="row">Imperial College London</td>
                                 <td class="row">Jonny Smith</td>
                                 <td class="row">PEL</td>
-                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">256</span></td>
+                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">256</span>
+                                </td>
                                 <td class="row">-</td>
                                 </td>
                             </tr>
@@ -249,7 +239,8 @@ Research and testing with animals prototype
                                 <td class="row">Anne Clarke</td>
                                 <td class="row">PIL</td>
                                 <td class="row"><a href="#">Revocation</a><br><span
-                                        class="govuk-body-s">Stephen Taylor</span></td>
+                                        class="govuk-body-s">Stephen Taylor</span>
+                                </td>
                                 <td class="row">20 days</td>
                             </tr>
                             <tr>
@@ -258,7 +249,8 @@ Research and testing with animals prototype
                                 <td class="row">Anne Clarke</td>
                                 <td class="row">PEL</td>
                                 <td class="row"><a href="#">Area amendment</a><br><span
-                                        class="govuk-body-s">Room 625</span></td>
+                                        class="govuk-body-s">Room 625</span>
+                                </td>
                                 <td class="row">-</td>
                             </tr>
                             <tr>
@@ -285,12 +277,14 @@ Research and testing with animals prototype
                         </table>
                         <!--end tab 2 div  -->
 
-                    </section>
+                        <!--</section>-->
+                    </div>
                 </div>
             </div>
         </div>
+</div>
 
-    </main>
+</main>
 </div>
 
 
