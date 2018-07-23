@@ -1004,28 +1004,28 @@ details summary {
 }
 
 // HO new style tabs
-.tabs > ol, .tabs > ul {
-  @extend %contain-floats;
-  list-style: none;
-  margin: 0 -16px;
-  padding: 0;
-  border-top: 1px solid #ababab;
-
-  @include media(tablet) {
-    margin: 0;
-    border-top: 0;
-    border-bottom: 2px solid #ababab;
-  }
-}
-
-.tabs > ul li, .tabs > ol li {
-  margin: 0;
-
-  @include media(tablet) {
-    float: left;
-    margin: 0 3px 0 0;
-  }
-}
+//.tabs > ol, .tabs > ul {
+//  @extend %contain-floats;
+//  list-style: none;
+//  margin: 0 -16px;
+//  padding: 0;
+//  border-top: 1px solid #ababab;
+//
+//  @include media(tablet) {
+//    margin: 0;
+//    border-top: 0;
+//    border-bottom: 2px solid #ababab;
+//  }
+//}
+//
+//.tabs > ul li, .tabs > ol li {
+//  margin: 0;
+//
+//  @include media(tablet) {
+//    float: left;
+//    margin: 0 3px 0 0;
+//  }
+//}
 
 
 // link entire table row

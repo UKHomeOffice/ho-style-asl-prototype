@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Research and testing with animals prototype
@@ -24,7 +24,7 @@ Research and testing with animals prototype
 
         <main class="govuk-main-wrapper">
 
-            <form action="confirmation-page" method="get" class="form">
+            <form action="confirmation-page-reassigned" method="get" class="form">
 
                 <div class="govuk-grid-row">
                     <div class="govuk-grid-column-full">
@@ -48,7 +48,7 @@ Research and testing with animals prototype
                             <tbody>
                             <tr>
                                 <th class="multiple-choice--hod">
-                                    <span class="hint">Select all</span>
+                                    <span class="govuk-body-s">Select all</span>
                                     <div class="multiple-choice">
                                         <input type="checkbox" class="jsCheckboxAll" id="radio-all" onclick='selectAll()' value="Select All"/>
                                         <label for="radio-all">
