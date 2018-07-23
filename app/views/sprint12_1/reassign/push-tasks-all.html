@@ -1,0 +1,496 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<div class="govuk-phase-banner">-->
+    <!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+    <!--Prototype-->
+    <!--</strong>-->
+    <!--<span class="govuk-phase-banner__text">-->
+    <!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+    <!--</span>-->
+    <!--</p>-->
+    <!--</div>-->
+
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="../homepage">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">Outstanding tasks</li>
+        </ol>
+    </div>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-l">Outstanding tasks</h2>
+
+                <div class="govuk-!-padding-bottom-4"></div>
+
+                <header role="banner" id="global-header" class="" style="background-color: #f3f3f3;">
+                    <div class="header-wrapper">
+                        <div class="header-global">
+
+                            <!--<h3 class="govuk-heading-m">-->
+                            <!--Search by establishment name-->
+                            <!--</h3>-->
+
+                            <p class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Search by establishment
+                                name</p>
+
+                            <a href="#" class="search-toggle js-header-toggle"></a>
+
+                            <form id="search" class="site-search" action="#" method="get" role="search">
+                                <div class="content">
+                                    <label for="site-search-text"></label>
+                                    <input type="search" name="q" id="site-search-text" title="Search"
+                                           class="js-search-focus">
+                                    <input class="submit" type="submit" value="Search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
+                <div class="wrapper">
+                    <span class="govuk-caption-m breakable-text">Filter by:</span>&nbsp; &nbsp;
+                    <h3 class="govuk-heading-s breakable-text">All</h3>&nbsp; &nbsp;
+                    <a href="#"
+                       class="govuk-body govuk-!-font-size-19 breakable-text govuk-link govuk-link--no-visited-state">PEL</a>&nbsp;
+                    &nbsp;
+                    <a href="#"
+                       class="govuk-body govuk-!-font-size-19 breakable-text govuk-link govuk-link--no-visited-state">PIL</a>&nbsp;
+                    &nbsp;
+                    <a href="#"
+                       class="govuk-body govuk-!-font-size-19 breakable-text govuk-link govuk-link--no-visited-state">PPL</a>
+                </div>
+
+                <div class="govuk-!-padding-bottom-7"></div>
+
+                <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+
+                    <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" style="background-color: #F3F3F3" href="#my-tasks">
+                                My tasks (7)
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" style="background-color: #DADADA" href="#all-tasks">
+                                Team tasks (9)
+                            </a>
+                        </li>
+                    </ul>
+
+                    <section class="govuk-tabs" id="my-tasks">
+
+                        <form action="selected-all-tasks-to-push" method="get" class="form">
+                            <div class="govuk-!-padding-bottom-6"></div>
+
+                            <p style="font-size: 20px;"> Select tasks to reassign them.</p>
+                            <div class="case-select-button"
+                                 style="float: right; padding-right: 0px; margin-top: -50px;">
+                                <input class="govuk-button" type="submit"
+                                       value="Reassign">
+                            </div>
+
+                            <!--START tab 1 div -->
+                            <table class="table-clickable">
+                                <tbody>
+                                <tr>
+                                    <th class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckboxAll" id="radio-all" onclick='selectAll()' value="Select All"/>
+                                            <label for="radio-all">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <!--<th style="max-width: 60px;"></th>-->
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Received<span
+                                            style="color:#005EA5;">▼</span></th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Establishment
+                                    </th>
+                                    <!--<th style="color:#005EA5; font-weight:bold; text-decoration:none;">-->
+                                    <!--Assigned to-->
+                                    <!--</th>-->
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Licence
+                                    </th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Type
+                                    </th>
+                                    <th style="color:#005EA5; font-weight:bold; text-decoration:none;">
+                                        Days left
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-1" name="acs">
+                                            <label for="radio-1">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">5 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">Area amendment</a><br><span
+                                            class="govuk-body-s">LG36</span></td>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <td class="multiple-choice--hod">
+                                    <div class="multiple-choice">
+                                        <input type="checkbox" class="jsCheckbox" id="radio-2" name="acs">
+                                        <label for="radio-2">
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="row">5 Jun 2018</td>
+                                <td class="row">University of Birmingham</td>
+                                <!--<td class="row">Barry Taylor</td>-->
+                                <td class="row">PEL</td>
+                                <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">LG555</span></td>
+                                <td class="row">-</td>
+                                </td>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-3" name="acs">
+                                            <label for="radio-3">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">4 Jul 2018</td>
+                                    <td class="row">Agrochemex Environmental <br> Ltd</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">New area</a><br><span
+                                            class="govuk-body-s">Room 206</span></td>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-4" name="acs">
+                                            <label for="radio-4">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">3 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">New named person</a><br><span class="govuk-body-s">Ellen Page</span>
+                                    </td>
+                                    <td class="row">-</td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-5" name="acs">
+                                            <label for="radio-5">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">2 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PEL</td>
+                                    <td class="row"><a href="#">Area amendment</a><br><span
+                                            class="govuk-body-s">LG66</span></td>
+                                    <td class="row">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-6" name="acs">
+                                            <label for="radio-6">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">1 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PPL<br><span class="govuk-body-s" style="color:	#b10e1e">Expires 1 Sep 2018</span>
+                                    </td>
+                                    <td class="row"><a href="#">Project continuation</a><br><span class="govuk-body-s">Development of new <br>biological
+anti-cancer agents</span></td>
+                                    <td class="row">29 days</td>
+                                </tr>
+                                <tr>
+                                    <td class="multiple-choice--hod">
+                                        <div class="multiple-choice">
+                                            <input type="checkbox" class="jsCheckbox" id="radio-7" name="acs">
+                                            <label for="radio-7">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="row">1 Jun 2018</td>
+                                    <td class="row">University of Birmingham</td>
+                                    <!--<td class="row">Barry Taylor</td>-->
+                                    <td class="row">PPL<br><span class="govuk-body-s" style="color: #b10e1e">Expires 9 Sep 2018</span>
+                                    </td>
+                                    <td class="row"><a href="#">Project continuation</a><br><span class="govuk-body-s">Thermosensitive nanoparticles... <br>
+</span></td>
+                                    <td class="row">29 days</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!--end tab 1 div  -->
+
+                        </form>
+                    </section>
+
+                    <section class="govuk-tabs" id="all-tasks">
+
+                        <form action="selected-tasks-to-pick" method="get" class="form">
+                            <div class="govuk-!-padding-bottom-6"></div>
+
+                            <p style="font-size: 20px;"> Select tasks to reassign them.</p>
+                            <div class="case-select-button"
+                                 style="float: right; padding-right: 0px; margin-top: -50px;">
+                                <input class="govuk-button" type="submit"
+                                       value="Reassign">
+                            </div>
+
+                            <!--START tab 2 div -->
+                            <table>
+                                <thead>
+                                <tr>
+                                    <table class="table-clickable">
+                                        <tbody>
+                                        <tr>
+                                            <th class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckboxAll" id="radio-all">
+                                                    <label for="radio-all">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </th>
+                                            <!--<th style="max-width: 60px;"></th>-->
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Received</a><span
+                                                    style="color:#005EA5;">▼</span>
+                                            </td>
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Establishment</a>
+                                            </td>
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Assigned
+                                                to</a>
+                                            </td>
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Licence</a>
+                                            </td>
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Type</a>
+                                            </td>
+                                            <td class="row"><a href="#"
+                                                               style="color:#005EA5; font-weight:bold; text-decoration:none;">Days
+                                                left</a>
+                                            </td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-1">
+                                                    <label for="radio-1">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">University of Glasgow</td>
+                                            <td class="row">Nicola Jones</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">New area</a><br><span
+                                                    class="govuk-body-s">LG555</span></td>
+                                            <td class="row">-</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-2">
+                                                    <label for="radio-2">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jul 2018</td>
+                                            <td class="row">Churchill Applied <br> Biotechnology Limited</td>
+                                            <td class="row">Nicola Jones</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="decision-allocate">Area amendment</a><br><span
+                                                    class="govuk-body-s">Room 2046</span></td>
+                                            <td class="row">-</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-3">
+                                                    <label for="radio-3">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jul 2018</td>
+                                            <td class="row">Agrochemex <br> Environmental Ltd</td>
+                                            <td class="row">Jonny Smith</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">Room 12.36</span>
+                                            </td>
+                                            <td class="row">-</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-4">
+                                                    <label for="radio-4">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">Cardiff University</td>
+                                            <td class="row">Jonny Smith</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">New named person</a><br><span
+                                                    class="govuk-body-s">Ellen Page</span></td>
+                                            <td class="row">-</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-5">
+                                                    <label for="radio-5">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">Imperial College London</td>
+                                            <td class="row">Jonny Smith</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">New area</a><br><span class="govuk-body-s">Room 39</span>
+                                            </td>
+                                            <td class="row">-</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-6">
+                                                    <label for="radio-6">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">University of Cambridge</td>
+                                            <td class="row">Anne Clarke</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">Area amendment</a><br><span
+                                                    class="govuk-body-s">Room 28</span></td>
+                                            <td class="row">20 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-7">
+                                                    <label for="radio-7">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">University of Cambridge</td>
+                                            <td class="row">Anne Clarke</td>
+                                            <td class="row">PEL</td>
+                                            <td class="row"><a href="#">Area amendment</a><br><span
+                                                    class="govuk-body-s">Room 247</span></td>
+                                            <td class="row">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-8">
+                                                    <label for="radio-8">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">Cardiff University</td>
+                                            <td class="row">Jonny Smith</td>
+                                            <td class="row">PIL
+                                            </td>
+                                            <td class="row"><a href="#">Revocation</a><br><span
+                                                    class="govuk-body-s">Greg Miles</span></td>
+                                            <td class="row">20 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="multiple-choice--hod">
+                                                <div class="multiple-choice">
+                                                    <input type="checkbox" class="jsCheckbox" id="radio-9">
+                                                    <label for="radio-9">
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="row">5 Jun 2018</td>
+                                            <td class="row">Cardiff University</td>
+                                            <td class="row">Jonny Smith</td>
+                                            <td class="row">PIL
+                                            </td>
+                                            <td class="row"><a href="#">Revocation</a><br><span
+                                                    class="govuk-body-s">Amy Price</span></td>
+                                            <td class="row">20 days</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--end tab 2 div  -->
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+{% endblock %}
+
