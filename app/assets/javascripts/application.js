@@ -183,7 +183,7 @@ $('.js-all-cases').click(function (e) {
 })
 
 // Tabs
-// Left hand tab navigation, e.g. caseworker screen
+// Left hand tab navigation
 $('.leftnavlinks').click(function (e) {
     e.preventDefault()
     var current = $('.leftnavlinks.active').data('target')
@@ -2070,4 +2070,13 @@ $(function() {
 //         return;
 //
 //     location.href = $(this).find("a").attr("href");
+// });
+
+// Side tab
+// $('ul.tab__nav li a').click(function(){
+//     var target = "#" + $(this).data("target");
+//     $("ul.tab__nav li a").removeClass('active');
+//     $(this).addClass('active');
+//     $('.tab__content').not(target).addClass('js-hidden');
+//     $(target).removeClass('js-hidden');
 // });
