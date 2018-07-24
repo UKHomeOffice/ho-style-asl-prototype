@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="decision-remove-remove">Back</a>
+<div class="govuk-!-padding-bottom-4"></div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+            Check your answers
+        </h1>
+
+        <div class="govuk-!-padding-bottom-2"></div>
+
+        <!-- only add a heading for a list if there is more than one list -->
+        <h2 class="govuk-heading-m">
+            Changes to restrictions
+        </h2>
+
+        <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+        <!--   * `app-check-your-answers--short` for short questions -->
+        <!--   * `app-check-your-answers__questions-long` for long questions -->
+        <!--   * none for single group of q&a -->
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--New restrictions-->
+                <!--</dt>-->
+                <dd class="app-check-your-answers__answer">
+                    All restrictions have been removed.
+                </dd>
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change
+                    </a>
+                </dd>
+            </div>
+        </dl>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+
+        <h2 class="govuk-heading-m">
+            Your decision
+        </h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--Decision-->
+                <!--</dt>-->
+                <dd class="app-check-your-answers__answer">
+                    {{ data['decision'] }}
+                </dd>
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change
+                    </a>
+                </dd>
+            </div>
+
+            <!--<div class="app-check-your-answers__contents">-->
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--Explanation-->
+                <!--</dt>-->
+                <!--<dd class="app-check-your-answers__answer">-->
+                    <!--{{ data['more-details'] }}-->
+                <!--</dd>-->
+                <!--<dd class="app-check-your-answers__change">-->
+                    <!--<a href="#">-->
+                        <!--Change-->
+                    <!--</a>-->
+                <!--</dd>-->
+            <!--</div>-->
+
+        </dl>
+
+        <br>
+
+        <a class="govuk-button" href="confirmation-page" role="button">
+            Submit
+        </a>
+
+    </div>
+</div>
+{% endblock %}

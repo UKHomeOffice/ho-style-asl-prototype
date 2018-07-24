@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back</a>
+
+    <div class="govuk-!-padding-bottom-1"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <!--<div style="margin: 30px 0;">-->
+
+            <h2 class="govuk-heading-l">Amend approved area</h2>
+
+            <div class="govuk-inset-text">
+                Submitted by Angela Smith on behalf of William Blanc on 2 June 2018.
+                <div class="govuk-!-padding-bottom-2"></div>
+                Recommendation provided by Irene Miles on 6 June 2018.
+            </div>
+
+            <div class="govuk-!-padding-bottom-3"></div>
+
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--m">
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+                <ul class="leftnav">
+                    <li>
+                        <a href="#"
+                           class="leftnavlinks application-details active" data-target="application-details">
+                            Inspector's recommendation
+                            <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                            <!--<span class="tag tag&#45;&#45;risk" style="display: none;">Incomplete</span>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="decision_make"
+                           class="leftnavlinks decision" data-target="decision">
+                            Make a decision
+                            <span class="tag tag--complete" style="display: none;">Complete</span>
+                        </a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="#"-->
+                    <!--class="leftnavlinks recommendation" data-target="recommendation">-->
+                    <!--Your recommendation-->
+                    <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<hr style="margin:0">-->
+                    <!--<a href="decision_make"-->
+                    <!--class="leftnavlinks notes" data-target="notes">-->
+                    <!--Make a decision-->
+                    <!--&lt;!&ndash;<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#"-->
+                    <!--class="leftnavlinks history" data-target="history">-->
+                    <!--Application history-->
+                    <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div> <!-- /Tab menu -->
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <div class="flash-card" style="margin-top: -0px">
+
+                    <h3 class="govuk-heading-m">
+                        Inspector's recommendation - Approve
+                    </h3>
+                    <p>In my professional opinion the changes requested are all appropriate and should be
+                        actioned accordingly.
+                        
+                        I also recommend that both restrictions should be removed from this area.
+                    </p>
+
+                
+                </div>
+
+                <div class="govuk-!-padding-bottom-8"></div>
+
+                <div id="case-details" class="leftnavcontent" style="display: block;">
+                    <form class="check-fields" data-current="case-details">
+
+                        <!--<h3 class="govuk-heading-m">-->
+                        <!--Amendment request-->
+                        <!--</h3>-->
+
+                        <div class="govuk-!-padding-bottom-4"></div>
+
+                        <table class="govuk-table">
+                            <!--<caption class="govuk-table__caption">Caption</caption>-->
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="col"></th>
+                                <th class="govuk-table__header" scope="col">Current</th>
+                                <th class="govuk-table__header" scope="col">Proposed</th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">Site</th>
+                                <td class="govuk-table__cell ">Apollo House</td>
+                                <td class="govuk-table__cell ">Apollo House</td>
+                            </tr>
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">Area</th>
+                                <td class="govuk-table__cell ">1/F</td>
+                                <td class="govuk-table__cell ">1/F</td>
+                            </tr>
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">Name</th>
+                                <td class="govuk-table__cell ">LG36</td>
+                                <td class="govuk-table__cell ">LG36</td>
+                            </tr>
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">Suitability</th>
+                                <td class="govuk-table__cell ">SA</td>
+                                <td class="govuk-table__cell ">SA, <span class="highlight">AV</span>, <span
+                                        class="highlight">DOG</span></td>
+                            </tr>
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">Holding</th>
+                                <td class="govuk-table__cell ">STH</td>
+                                <td class="govuk-table__cell "><span class="highlight">LTH</span></td>
+                            </tr>
+                            <tr class="govuk-table__row noBorder">
+                                <th class="govuk-table__header" scope="row">NACWO</th>
+                                <td class="govuk-table__cell "><a href="#"
+                                                                  class="govuk-link govuk-link--no-visited-state">Gareth
+                                    Tindall</a></td>
+                                <td class="govuk-table__cell "><a href="#"
+                                                                  class="govuk-link govuk-link--no-visited-state">Gareth
+                                    Tindall</a></td>
+                            </tr>
+                        </table>
+
+                        <!--<div class="govuk-!-padding-bottom-2"></div>-->
+                        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                        <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current restrictions</h3>
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>Perfusion under general anesthetic & Schedule 1 killing</li>
+                            <li>Monday to Thursday only</li>
+                        </ul>
+
+                        <div class="govuk-!-padding-bottom-2"></div>
+
+                        <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">What changes are needed to
+                            the current
+                            restrictions?</h3>
+
+                        <p><span class="highlight">Both restrictions should be removed.</span></p>
+
+                        <div class="govuk-!-padding-bottom-6"></div>
+
+                        <!--<div class="flash-card">-->
+
+                        <!--<h3 class="govuk-heading-m">-->
+                        <!--Inspector's recommendation - Approve-->
+                        <!--</h3>-->
+                        <!--<p>In my professional opinion the changes requested are all appropriate and should be-->
+                        <!--actioned-->
+                        <!--accordingly.-->
+                        <!--</p>-->
+
+                        <!--<p>Add content related to restrictions as part of recommendations.</p>-->
+                        <!--</div>-->
+
+                        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                        <details class="govuk-details">
+                            <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Establishment details
+    </span>
+                            </summary>
+                            <div class="govuk-!-padding-bottom-3"></div>
+                            <p class="govuk-body govuk-!-font-size-16">
+                                Establishment<br>
+                                <a href="https://asl-prototypes.herokuapp.com/establishment?id=103" class=""
+                                   target="_blank" style="color: #005EA5">
+                                    University of Birmingham
+                                </a></p>
+                            <div class="govuk-!-padding-bottom-3"></div>
+                            <p class="govuk-body govuk-!-font-size-16">
+                                Licence number<br>
+                                <a href="https://asl-prototypes.herokuapp.com/details?id=103" class=""
+                                   target="_blank" style="color: #005EA5">
+                                    XXXXXXXX
+                                </a></p>
+                            <div class="govuk-!-padding-bottom-3"></div>
+                            <p class="govuk-body govuk-!-font-size-16">
+                                Licence holder<br>
+                                <a href="#" class="" style="color: #005EA5">
+                                    William Blanc
+                                </a></p>
+                            <div class="govuk-!-padding-bottom-3"></div>
+                            <p class="govuk-body govuk-!-font-size-16">
+                                SPoC<br>
+                                <a href="#" class="" style="color: #005EA5">
+                                    Barry Taylor
+                                </a></p>
+                        </details>
+
+
+                        <div class="govuk-!-padding-bottom-6"></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
