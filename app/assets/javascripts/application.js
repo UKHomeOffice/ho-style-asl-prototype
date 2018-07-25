@@ -2080,3 +2080,8 @@ $(function() {
 //     $('.tab__content').not(target).addClass('js-hidden');
 //     $(target).removeClass('js-hidden');
 // });
+
+// table row click-able
+$("tr").click(function(){
+    window.location = $(that).parent().data("href");
+});

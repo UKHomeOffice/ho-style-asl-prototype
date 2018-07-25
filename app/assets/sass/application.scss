@@ -1188,3 +1188,6 @@ details summary {
 //  width: 100%;
 //}
 //
+
+table.clickable tr > td { cursor: pointer; }
+//table.clickable tr > td > a { display: block; text-decoration: none; }

@@ -10350,3 +10350,9 @@ if ( typeof noGlobal === strundefined ) {
 return jQuery;
 
 }));
+
+
+// table row click-able
+$("tr").click(function(){
+    window.location = "decision.html";
+});
