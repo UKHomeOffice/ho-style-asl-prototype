@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back to tasks</a>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <h2 class="govuk-heading-l">Amend approved area
+                <!--<span class="govuk-caption-m">University of Birmingham</span>-->
+            </h2>
+
+        </div>
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+
+                <!-- < CONTENT NAVIGATION > -->
+                <ul class="leftnav">
+                    <li>
+                        <a href="decision"
+                           class="leftnavlinks application-details" data-target="application-details">
+                            View proposed amendment
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                           class="leftnavlinks recommendation active" data-target="recommendation">
+                            View inspector's recommendation
+                        </a>
+                    </li>
+                    <li>
+                        <hr style="margin:0">
+                        <a href="restrictions"
+                           class="leftnavlinks restrictions" data-target="restrictions">
+                            Change restrictions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="make-decision"
+                           class="leftnavlinks decision" data-target="decision">
+                            Make a decision
+                        </a>
+                    </li>
+                </ul>
+                <!-- </ CONTENT NAVIGATION > -->
+            </div>
+
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <!-- < RECOMMENDATION > -->
+                <div id="restrictions" class="leftnavcontent" style="display: block;">
+
+                    <h3 class="govuk-heading-m">
+                        Inspector's recommendation
+                    </h3>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col"></th>
+                            <th class="govuk-table__header" scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">Recommend to</th>
+                            <td class="govuk-table__cell ">Approve</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">Advice on changes</th>
+                            <td class="govuk-table__cell ">In my professional opinion the changes requested <br> on both the suitability and holding codes are all <br> appropriate and should be actioned accordingly.</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">Advice on restrictions</th>
+                            <td class="govuk-table__cell ">I recommend that both restrictions should be removed from this area.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- < RECOMMENDATION > -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

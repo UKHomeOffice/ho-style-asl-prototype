@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back to tasks</a>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <h2 class="govuk-heading-l">Amend approved area
+                <!--<span class="govuk-caption-m">University of Birmingham</span>-->
+            </h2>
+
+        </div>
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+
+                <!-- < CONTENT NAVIGATION > -->
+                <ul class="leftnav">
+                    <li>
+                        <a href="decision"
+                           class="leftnavlinks application-details" data-target="application-details">
+                            View proposed amendment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recommendation"
+                           class="leftnavlinks recommendation" data-target="recommendation">
+                            View inspector's recommendation
+                        </a>
+                    </li>
+                    <li>
+                        <hr style="margin:0">
+                        <a href=""
+                           class="leftnavlinks restrictions  active" data-target="restrictions">
+                            Change restrictions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="make-decision"
+                           class="leftnavlinks decision" data-target="decision">
+                            Make a decision
+                        </a>
+                    </li>
+                </ul>
+                <!-- </ CONTENT NAVIGATION > -->
+            </div>
+
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <!-- < RESTRICTIONS > -->
+                <div id="restrictions" class="leftnavcontent" style="display: block;">
+
+                    <h3 class="govuk-heading-m">
+                        Change restrictions
+                    </h3>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+
+                    <table class="govuk-table">
+                        <caption class="govuk-table__caption">Current restrictions</caption>
+                        <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col"></th>
+                            <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                            <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__cell" scope="row">Monday to Thursday only</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><a href="#">Change</a></td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><a href="remove-restriction2">Remove</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a href="#">Add another restriction</a>
+                    <div class="govuk-!-padding-bottom-8"></div>
+                </div><!-- < RESTRICTIONS > -->
+
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption">You've removed 1 restriction</caption>
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col"></th>
+                        <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                        <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__cell" scope="row">Perfusion under general anesthetic & Schedule 1 killing</th>
+                        <td class="govuk-table__cell govuk-table__cell--numeric"><a href="#">Reapply</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

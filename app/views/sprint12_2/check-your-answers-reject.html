@@ -5,7 +5,7 @@ Check your answers
 {% endblock %}
 
 {% block beforeContent %}
-<a class="govuk-back-link" href="decision-remove-remove">Back</a>
+<a class="govuk-back-link" href="make-decision">Back</a>
 <div class="govuk-!-padding-bottom-4"></div>
 {% endblock %}
 
@@ -17,34 +17,7 @@ Check your answers
             Check your answers
         </h1>
 
-        <div class="govuk-!-padding-bottom-2"></div>
-
-        <!-- only add a heading for a list if there is more than one list -->
-        <h2 class="govuk-heading-m">
-            Changes to restrictions
-        </h2>
-
-        <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
-        <!--   * `app-check-your-answers--short` for short questions -->
-        <!--   * `app-check-your-answers__questions-long` for long questions -->
-        <!--   * none for single group of q&a -->
-        <dl class="app-check-your-answers app-check-your-answers--short">
-            <div class="app-check-your-answers__contents">
-                <!--<dt class="app-check-your-answers__question">-->
-                    <!--New restrictions-->
-                <!--</dt>-->
-                <dd class="app-check-your-answers__answer">
-                    All restrictions have been removed
-                </dd>
-                <dd class="app-check-your-answers__change">
-                    <a href="#">
-                        Change
-                    </a>
-                </dd>
-            </div>
-        </dl>
-
-        <div class="govuk-!-padding-bottom-5"></div>
+        <div class="govuk-!-padding-bottom-4"></div>
 
         <h2 class="govuk-heading-m">
             Your decision
@@ -67,7 +40,7 @@ Check your answers
 
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question">
-                    Explanation
+                    Reasons
                 </dt>
                 <dd class="app-check-your-answers__answer">
                     {{ data['more-detail'] }}
@@ -81,9 +54,17 @@ Check your answers
 
         </dl>
 
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                The restrictions you've removed will not be processed.
+            </strong>
+        </div>
+
         <br>
 
-        <a class="govuk-button" href="confirmation-page-not-approve" role="button">
+        <a class="govuk-button" href="confirmation-page-rejected" role="button">
             Submit
         </a>
 
