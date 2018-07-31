@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-!-padding-bottom-7"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+            Sprint 13
+            <!--<span class="govuk-caption-xl">{{releaseVersion}}</span>-->
+        </h1>{{releaseVersion | log }}
+
+        <p>User testing 22.08.2018</p>
+
+        <h4 class="govuk-heading-s">Account set up and issuing permissions</h4>
+        <ul class="govuk-list govuk-list--number">
+            <li><a href="holc/sign-in">Admin - sign in</a></li>
+            <li><a href="holc/homepage">Admin - homepage (placeholder)</a></li>
+            <li><a href="holc/manage-users">Admin - invite user</a></li>
+            <li><a href="holc/invite-sent">Admin - invite sent</a></li>
+            <li><a href="new-user/email-invite">New user - receive email</a></li>
+            <li><a href="new-user/create-account">New user - create account and profile</a></li>
+            <li><a href="new-user/homepage">New user - account created</a></li>
+            <li><a href="new-user/profile">New user - view profile</a></li>
+        </ul>
+
+        <h4 class="govuk-heading-s">Manage profile</h4>
+        <ul class="govuk-list govuk-list--number">
+            <li><a href="new-user/profile">Return user - add training modules</a></li>
+        </ul>
+
+        <h4 class="govuk-heading-s">PIL application</h4>
+        <ul class="govuk-list govuk-list--number">
+            <li><a href="new-user/apply">Apply licence</a></li>
+            <li><a href="ntco/endorse">NTCO - endorse training</a></li>
+            <li><a href="new-user/licence-granted">Licence granted</a></li>
+        </ul>
+
+        <div class="govuk-!-padding-bottom-4"></div>
+
+    </div>
+</div>
+
+{% endblock %}
