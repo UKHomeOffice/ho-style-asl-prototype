@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<a href="/url/of/previous/page" class="govuk-back-link">Back</a>-->
+
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="manage-users">Manage users</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="#">Invite user</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-l">Invite user</h2>
+
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <!--<h1 class="govuk-fieldset__heading">-->
+                        <!--Invite user-->
+                        <!--</h1>-->
+                    </legend>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="first-name">
+                            First name
+                        </label>
+                        <input class="govuk-input govuk-!-width-two-thirds" id="first-name" name="first-name"
+                               type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="last-name">
+                            Last name
+                        </label>
+                        <input class="govuk-input govuk-!-width-two-thirds" id="last-name" name="last-name"
+                               type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="email">
+                            Email address
+                        </label>
+                        <!--<span id="email-hint" class="govuk-hint">-->
+                        <!--We’ll only use this to send you a receipt-->
+                        <!--</span>-->
+                        <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email"
+                               type="text" aria-describedby="email-hint">
+                    </div>
+
+                </fieldset>
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                                Permission level
+                            </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-1" name="permissions"
+                                       type="radio" value="">
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-1">
+                                    Administrators
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">View all data</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Amend all data</span>
+                                    <!--<span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Can request revocation</span>-->
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Manage users</span>
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-2" name="permissions"
+                                       type="radio" value="">
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-2">
+                                    Intermediate
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">View own data</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Amend own data</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">View all licence data</span>
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-3" name="permissions"
+                                       type="radio" value="" checked>
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-3">
+                                    Basic
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">View own data</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Amend own data</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <a href="invite-sent#invited" class="govuk-button" type="submit">
+                    Send invitation email
+                </a>
+
+            </div>
+        </div>
+</div>
+
+</main>
+</div>
+
+
+{% endblock %}

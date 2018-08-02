@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+<!--<a class="govuk-back-link" href="enter-details">Back</a>-->
+<div class="govuk-!-padding-bottom-8"></div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+            Check your answers
+        </h1>
+
+        <div class="govuk-!-padding-bottom-4"></div>
+
+        <!-- only add a heading for a list if there is more than one list -->
+        <h2 class="govuk-heading-m">
+            Create account <span class="govuk-link govuk-!-font-size-19" style="float: right; margin-top: 10px;"><a href="create-account">Change</a></span>
+        </h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                Password
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    You can change your password anytime
+                </dd>
+                <!--<dd class="app-check-your-answers__change">-->
+                    <!--<a href="#">-->
+                        <!--Change-->
+                    <!--</a>-->
+                <!--</dd>-->
+            </div>
+        </dl>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+
+
+        <h2 class="govuk-heading-m">
+            Your details <span class="govuk-link govuk-!-font-size-19" style="float: right; margin-top: 10px;"><a
+                href="enter-details">Change</a></span>
+        </h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Title
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    Mr
+                </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    First name
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    {{ data[‘first-name’] }}
+                </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Last name
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    {{ data[‘last-name’] }}
+                </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Date of birth
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    <!--{{ data[‘dob-day’] }}/{{ data[‘dob-month’] }}/{{ data[‘dob-year’] }}-->
+                </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Phone number
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    {{ data[‘phone-number’] }}
+                </dd>
+            </div>
+        </dl>
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                You need to apply for a personal licence in order to carry out the procedures.
+            </strong>
+        </div>
+
+        <!--<br>-->
+
+        <a class="govuk-button" href="confirmation-page" role="button">
+            Create account
+        </a>
+
+    </div>
+</div>
+{% endblock %}

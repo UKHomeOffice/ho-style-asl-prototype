@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<a href="/url/of/previous/page" class="govuk-back-link">Back</a>-->
+
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="homepage">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="#">Manage users</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-l">Manage users</h2>
+
+                <div class="govuk-!-padding-bottom-4"></div>
+
+                <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+                    <h2 class="govuk-tabs__title">
+                        Contents
+                    </h2>
+
+                    <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#active">
+                                Active (1)
+                            </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                            <a class="govuk-tabs__tab" href="#invited">
+                                Invited (0)
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="case-select-button"
+                         style="float: right; padding-right: 0px; margin-top: -50px;">
+                        <a href="invite-user" class="govuk-button" type="submit">
+                            Invite new user
+                        </a>
+                        <!--<input class="govuk-button" type="submit"-->
+                               <!--value="Invite new users">-->
+                    </div>
+
+                    <section class="govuk-tabs__panel" id="active" style="background-color: #fff">
+                        <h3 class="govuk-heading-m"></h3>
+
+                        <!--START tab 1 div -->
+                        <table class="clickable">
+                            <caption class="govuk-table__caption">Administrators (1)</caption>
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__header">Name</td>
+                                <td class="govuk-table__header">Email address</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="row">Angela Smith (you)</td>
+                                <td class="row">angela.smith@birmingham.ac.uk</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="govuk-!-padding-bottom-8"></div>
+
+                        <table class="clickable">
+                            <caption class="govuk-table__caption">Intermediate (0)</caption>
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__header"></td>
+                                <td class="govuk-table__header"></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                        </table>
+
+                        <div class="govuk-!-padding-bottom-8"></div>
+
+                        <table class="clickable">
+                            <caption class="govuk-table__caption">Basic (0)</caption>
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__header"></td>
+                                <td class="govuk-table__header"></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                        </table>
+                        <!--end tab 1 div  -->
+                        <div class="govuk-!-padding-bottom-9"></div>
+                    </section>
+
+                    <section class="govuk-tabs__panel" id="invited" style="background-color: #fff">
+                        <h3 class="govuk-heading-m">Invited</h3>
+
+                        <p>You haven't invited anyone to join the establishments yet.</p>
+                        <div class="govuk-!-padding-bottom-9"></div>
+
+                        <!--START tab 2 div -->
+                        <!--<table class="clickable">-->
+                            <!--<caption class="govuk-table__caption">Administrators (1)</caption>-->
+                            <!--<thead class="govuk-table__head">-->
+                            <!--<tr class="govuk-table__row">-->
+                                <!--<td class="govuk-table__header">Name</td>-->
+                                <!--<td class="govuk-table__header">Email address</td>-->
+                            <!--</tr>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td class="row">Angela Smith (you)</td>-->
+                                <!--<td class="row">angela.smith@birmingham.ac.uk</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                        <!--end tab 2 div  -->
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+
+{% endblock %}
