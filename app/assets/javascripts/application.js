@@ -2607,3 +2607,22 @@ $("tr").click(function(){
         }
     }
 }(window.GOVUK.Modules), window.GOVUK.stickAtTopWhenScrolling.init(), window.GOVUK.stopScrollingAtFooter.addEl($(".js-stick-at-top-when-scrolling"));
+
+
+// accordion.js
+if (
+    'addEventListener' in document &&
+    document.querySelectorAll
+) {
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        var accordions = document.querySelectorAll('.accordion')
+
+        for (var i = accordions.length - 1; i >= 0; i--) {
+            new Accordion(accordions[i])
+        };
+
+    })
+
+}

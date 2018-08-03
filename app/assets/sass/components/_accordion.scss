@@ -1,61 +1,74 @@
-.accordion .toggles {
-  margin: 0;
+.accordion-controls {
   text-align: right;
 }
 
-.accordion .toggles button {
-  background: none;
-  border: none;
-  color: #005ea5;
+.accordion-expand-all {
+  display: inline;
+  background: transparent;
+  border-width: 0;
   font-size: 16px;
+  color: #005EA5;
   cursor: pointer;
 }
 
-.expanding-panel {
-  border-top: 1px solid #bfc1c3;
+.accordion .accordion-section[aria-expanded="false"] .accordion-section-body {
+  display: none;
 }
 
-.expanding-panel:last-child {
-  border-bottom: 1px solid #bfc1c3;
+.accordion.with-js {
+  border-bottom-width: 1px;
+  border-bottom-color: #bfc1c3;
+  border-bottom-style: solid;
 }
 
-.expanding-panel header {
-  padding: 15px;
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-  background-color: #f3f3f3;
-  border-bottom: 1px solid #bfc1c3;
+.accordion.with-js .accordion-section {
+  border-top-width: 1px;
+  border-top-color: #bfc1c3;
+  border-top-style: solid;
 }
 
-.expanding-panel header:hover {
-  background: #fff;
-}
-
-.expanding-panel header h3 {
-  margin: 0;
-}
-
-.expanding-panel header h3:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 16px;
-  height: 16px;
-  margin-top: 4px;
-  background: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3C!--Icons from directory ''--%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' height='16' width='16' version='1.1' viewBox='0 0 16 16' id='minus' y='0'%3E%3Cpath d='m0 6.5v3c0 0.276 0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5z'/%3E%3C/svg%3E%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' height='16' width='16' version='1.1' viewBox='0 0 16 16' id='plus' y='16'%3E%3Cpath d='m15.5 6h-5.5v-5.5c0-0.276-0.224-0.5-0.5-0.5h-3c-0.276 0-0.5 0.224-0.5 0.5v5.5h-5.5c-0.276 0-0.5 0.224-0.5 0.5v3c0 0.276 0.224 0.5 0.5 0.5h5.5v5.5c0 0.276 0.224 0.5 0.5 0.5h3c0.276 0 0.5-0.224 0.5-0.5v-5.5h5.5c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5z'/%3E%3C/svg%3E%3C/svg%3E%0A") no-repeat bottom left;
-}
-
-.expanding-panel.open h3:after {
-  background: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3C!--Icons from directory ''--%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' height='16' width='16' version='1.1' viewBox='0 0 16 16' id='minus' y='0'%3E%3Cpath d='m0 6.5v3c0 0.276 0.224 0.5 0.5 0.5h15c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5h-15c-0.276 0-0.5 0.224-0.5 0.5z'/%3E%3C/svg%3E%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' height='16' width='16' version='1.1' viewBox='0 0 16 16' id='plus' y='16'%3E%3Cpath d='m15.5 6h-5.5v-5.5c0-0.276-0.224-0.5-0.5-0.5h-3c-0.276 0-0.5 0.224-0.5 0.5v5.5h-5.5c-0.276 0-0.5 0.224-0.5 0.5v3c0 0.276 0.224 0.5 0.5 0.5h5.5v5.5c0 0.276 0.224 0.5 0.5 0.5h3c0.276 0 0.5-0.224 0.5-0.5v-5.5h5.5c0.276 0 0.5-0.224 0.5-0.5v-3c0-0.276-0.224-0.5-0.5-0.5z'/%3E%3C/svg%3E%3C/svg%3E%0A") no-repeat top left;
-}
-
-.expanding-panel .content {
-  padding: 15px;
-}
-
-.expanding-panel .content h2:first-child, .expanding-panel .content .main .profile .profile-section h3:first-child, .main .profile .profile-section .expanding-panel .content h3:first-child {
+.accordion.with-js h2 {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.accordion.with-js .accordion-section-header {
+  cursor: pointer;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.accordion.with-js .accordion-section-header h2 {
+  color: #005EA5;
+}
+
+.accordion.with-js .accordion-section-header:hover {
+  background-color: #f8f8f8;
+}
+
+.accordion.with-js .icon {
+
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  height: 16px;
+  width: 16px;
+  margin-top: -8px;
+
+  /* Note: you may have to update these URL paths */;
+
+  /* PNG fallback for SVG */
+  background-image: url('/src/images/icon-plus-minus.png');
+
+  /* SVG sprite */
+  background: url("/src/images/icon-plus-minus.svg"), linear-gradient(transparent, transparent);
+
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+}
+
+.accordion.with-js .accordion-section[aria-expanded="true"] .icon {
+  background-position: 0 0;
 }
