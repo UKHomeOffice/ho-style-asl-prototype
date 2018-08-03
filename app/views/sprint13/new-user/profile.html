@@ -26,87 +26,109 @@ Research and testing with animals prototype
 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-                <h2 class="govuk-heading-l">Profile</h2>
+                <h2 class="govuk-heading-l">Profile
+                    <!--<span class="govuk-caption-m">Last updated 22 August 2018</span>-->
+                </h2>
 
 
+                <h2 class="govuk-heading-m">
+                    Your details <span class="govuk-link govuk-!-font-size-19"
+                                       style="float: right; margin-top: 10px;"><a
+                        href="change-details">Change</a></span>
+                </h2>
 
-                <dl>
-                    <dt class="govuk-heading-s">Licence number<br>
-                        <span class="govuk-body"><a href="PIL">XXXXXXXX</a></span></dt>
+                <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Title
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Mr
+                        </dd>
+                    </div>
 
-                    <dt class="govuk-heading-s">Last updated<br>
-                        <span class="govuk-body">22 August 2018 11:00 GMT</span></dt>
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            First name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Luigi
+                        </dd>
+                    </div>
 
-                    <dt class="govuk-heading-s">Name<br>
-                        <span class="govuk-body">Mr Luigi Russo</span></dt>
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Last name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Russo
+                        </dd>
+                    </div>
 
-                    <dt class="govuk-heading-s">Date of Birth<br>
-                        <span class="govuk-body">1/3/1978</span></dt>
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Date of birth
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            1/3/1978
+                            <!--{{ data[‘dob-day’] }}/{{ data[‘dob-month’] }}/{{ data[‘dob-year’] }}-->
+                        </dd>
+                    </div>
 
-                    <dt class="govuk-heading-s">Email<br>
-                        <span class="govuk-body">luigi.russo@birmingham.ac.uk</span></dt>
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Email address
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            luigi.russo@birmingham.ac.uk
+                        </dd>
+                    </div>
 
-                    <dt class="govuk-heading-s">Phone number<br>
-                        <span class="govuk-body">07717723456</span></dt>
-
-
-                    <!--<dt class="govuk-heading-s">Licensed to carry out-->
-                    <!--<div class="govuk-!-padding-bottom-2"></div>-->
-                    <!--<li class="govuk-body">Regulated procedures on protected animals</li>-->
-                    <!--<li class="govuk-body" style="margin-top: -10px;">Breeding of relevant protected animals</li>-->
-                    <!--<li class="govuk-body" style="margin-top: -10px;">Supply of relevant protected animals</li>-->
-                    <!--</dt>-->
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Phone number
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            07717723456
+                        </dd>
+                    </div>
                 </dl>
 
                 <div class="govuk-!-padding-bottom-6"></div>
 
-                <div class="accordion">
-                    <p class="toggles">
-                        <button>Open all</button>
+                <h2 class="govuk-heading-m">
+                    Training<span class="govuk-link govuk-!-font-size-19" style="float: right; margin-top: 10px;"><a
+                        href="#">Add</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--long">
+                    <p>
+                        You haven't added any training yet.
                     </p>
-                    <section class="expanding-panel open">
-                        <header><h4 class="govuk-heading-s" style="margin-bottom: -5px">Training</h4></header>
-                        <div class="content">
-                            <p>Content goes here</p>
-                    </section>
-                    <!--<section class="expanding-panel open">-->
-                        <!--<header><h4 class="govuk-heading-s" style="margin-bottom: -5px">Licensed to carry out</h4>-->
-                        <!--</header>-->
-                        <!--<div class="content">-->
-                            <!--<p>A. Minor/minimally invasive procedures not requiring sedation,-->
-                                <!--analgesia or general anaesthesia-->
-                            <!--</p>-->
-                            <!--<p>B. Minor/minimally invasive procedures-->
-                                <!--involving sedation, analgesia or brief general anaesthesia. Plus surgical procedures-->
-                                <!--conducted under brief non-recovery general anaesthesia-->
-                            <!--</p>-->
-                            <!--<p>C. Surgical procedures involving general-->
-                                <!--anaesthesia. Plus - administration and maintenance of balanced or prolonged general-->
-                                <!--anaesthesia-->
-                            <!--</p>-->
-                    <!--</section>-->
-                            <!--<li class="govuk-body">A. Minor/minimally invasive procedures not requiring sedation,-->
-                                <!--analgesia or general anaesthesia-->
-                            <!--</li>-->
-                            <!--<li class="govuk-body" style="margin-top: -10px;">B. Minor/minimally invasive procedures-->
-                                <!--involving sedation, analgesia or brief general anaesthesia. Plus surgical procedures-->
-                                <!--conducted under brief non-recovery general anaesthesia-->
-                            <!--</li>-->
-                            <!--<li class="govuk-body" style="margin-top: -10px;">C. Surgical procedures involving general-->
-                                <!--anaesthesia. Plus - administration and maintenance of balanced or prolonged general-->
-                                <!--anaesthesia-->
-                            <!--</li>-->
-                    <!--</section>-->
-                </div>
+                </dl>
+
             </div>
+
+            <div class="govuk-grid-column-one-third">
+
+                <aside class="app-related-items" role="complementary" style="border-top: 2px solid #8F23B3;
+    margin-top: 80px;">
+                    <div class="govuk-!-padding-bottom-3"></div>
+                    <h4 class="govuk-heading-s">Basic account
+                    <br>
+                    <span class="govuk-body govuk-!-font-size-16">
+                    You can view and amend your own data
+                    </span></h4>
+
+                    <p class="govuk-body govuk-!-font-size-16">
+                        To change your permission level please contact the administrator as your establishment.
+                    </p>
+                </aside>
+
+            </div>
+
         </div>
-
+    </main>
 </div>
-</div>
-</div>
-
-</main>
-</div>
-
 
 {% endblock %}
