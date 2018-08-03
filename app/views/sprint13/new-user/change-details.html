@@ -7,18 +7,18 @@ Research and testing with animals prototype
 {% block content %}
 
 <div class="govuk-width-container">
-    <a href="create-account" class="govuk-back-link">Back</a>
+    <a href="#" class="govuk-back-link">Back</a>
 
     <div class="govuk-!-padding-bottom-6"></div>
 
     <main class="govuk-main-wrapper">
 
-        <form action="check-your-answers" method="post" class="form">
+        <form action="../apply-PIL/task-list-page" method="post" class="form">
 
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
                     <!--<span class="govuk-caption-m">Step 2 of 2</span>-->
-                    <h2 class="govuk-heading-l">Change your details</h2>
+                    <h2 class="govuk-heading-l">Your details</h2>
 
                     <!--<p class="govuk-body">All administrators and named people can view your profile.</p>-->
 
@@ -79,7 +79,7 @@ Research and testing with animals prototype
                                     </label>
                                     <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
                                            id="dob-day"
-                                           name="dob-day" type="number" pattern="[0-9]*">
+                                           name="dob-day" type="number" pattern="[0-9]*" value="1">
                                 </div>
                             </div>
 
@@ -90,7 +90,7 @@ Research and testing with animals prototype
                                     </label>
                                     <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
                                            id="dob-month"
-                                           name="dob-month" type="number" pattern="[0-9]*">
+                                           name="dob-month" type="number" pattern="[0-9]*" value="3">
                                 </div>
                             </div>
 
@@ -101,7 +101,7 @@ Research and testing with animals prototype
                                     </label>
                                     <input class="govuk-input govuk-date-input__input govuk-input--width-4 "
                                            id="dob-year"
-                                           name="dob-year" type="number" pattern="[0-9]*">
+                                           name="dob-year" type="number" pattern="[0-9]*" value="1978">
                                 </div>
                             </div>
                         </div>
@@ -119,14 +119,14 @@ Research and testing with animals prototype
                     If there are any urgent problems with your application, you may be contacted so that we can help you.
                     </span>
                         <input autocomplete="off" class="govuk-input govuk-input--width-20" id="phone-number"
-                               name="phone-number" type="number">
+                               name="phone-number" type="number" value="07717723456">
                     </div>
 
                     </fieldset>
 
                     <br>
 
-                    <button class="govuk-button">Confirm</button>
+                    <button class="govuk-button">Save</button>
 
                     <!--<a href="check-your-answers" class="govuk-button" type="submit">-->
                     <!--Confirm-->
