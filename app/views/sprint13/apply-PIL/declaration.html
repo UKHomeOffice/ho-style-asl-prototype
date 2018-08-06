@@ -13,7 +13,7 @@ Research and testing with animals prototype
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="task-list-page-completed" method="post" class="form">
+        <form action="application-check-answers" method="post" class="form">
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
@@ -49,8 +49,7 @@ Research and testing with animals prototype
                         </div>
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="vehicle-features-C" name="vehicle-features"
-                                   type="checkbox" value="C. Surgical procedures involving general anaesthesia. Plus - administration and
-                                maintenance of balanced or prolonged general anaesthesia" {{ checked("vehicle-features", "C") }}>
+                                   type="checkbox" value="C" {{ checked("vehicle-features", "C") }}>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-C">
                                 C. Surgical procedures involving general anaesthesia. Plus - administration and
                                 maintenance of balanced or prolonged general anaesthesia
@@ -86,7 +85,7 @@ Research and testing with animals prototype
                 </fieldset>
             </div>
 
-            <button class="govuk-button">Save</button>
+            <button class="govuk-button">Continue</button>
 
         </form>
 
