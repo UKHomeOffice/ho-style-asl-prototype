@@ -1,0 +1,194 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back to Tasks</a>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <h2 class="govuk-heading-l">Approve PIL training
+                <!--<span class="govuk-caption-m">University of Birmingham</span>-->
+            </h2>
+
+        </div>
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+
+                <!-- < CONTENT NAVIGATION > -->
+                <ul class="leftnav">
+                    <li>
+                        <a href=""
+                           class="leftnavlinks application-details active" data-target="application-details">
+                            View application details
+                        </a>
+                    </li>
+                    <li>
+                        <a href="training"
+                           class="leftnavlinks recommendation" data-target="recommendation">
+                            View accredited training
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documents"
+                           class="leftnavlinks restrictions" data-target="restrictions">
+                            View supporting documentation
+                        </a>
+                    </li>
+                    <li>
+                        <hr style="margin:0">
+                        <a href="make-decision"
+                           class="leftnavlinks decision" data-target="decision">
+                            Make decision
+                        </a>
+                    </li>
+                </ul>
+                <!-- </ CONTENT NAVIGATION > -->
+            </div>
+
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <!-- < APPLICATION DETAILS > -->
+                <div id="application-details" class="leftnavcontent" style="display: block;">
+                    <!--<div class="leftnavcontent" id="application-details">-->
+
+                    <h3 class="govuk-heading-m">
+                        Application details
+                    </h3>
+
+                    <div class="govuk-inset-text">
+                        Submitted by <a href="#">Luigi Russo</a> on 22 August 2018.
+                        <!--<div class="govuk-!-padding-bottom-2"></div>-->
+                    </div>
+
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                        <!--<tr class="govuk-table__row noBorder">-->
+                            <!--<th class="govuk-table__header" scope="col"></th>-->
+                            <!--<th class="govuk-table__header" scope="col">Current</th>-->
+                        <!--</tr>-->
+                        </thead>
+                        <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current
+                            restrictions</h3>
+                        <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Site</th>
+                            <td class="govuk-table__cell ">Apollo House</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Area</th>
+                            <td class="govuk-table__cell ">1/F</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Name</th>
+                            <td class="govuk-table__cell ">LG36</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Suitability</th>
+                            <td class="govuk-table__cell ">SA</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Holding</th>
+                            <td class="govuk-table__cell ">STH</td>
+                        </tr>
+                    </table>
+
+                    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current
+                        restrictions</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Perfusion under general anesthetic & Schedule 1 killing</li>
+                        <li>Monday to Thursday only</li>
+                    </ul>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+
+                </div><!-- < APPLICATION DETAILS > -->
+
+
+                <!-- < RESTRICTIONS > -->
+                <div id="restrictions" class="leftnavcontent" style="display: none;">
+
+                    <div class="govuk-!-padding-bottom-8"></div>
+                    <h3 class="govuk-heading-m">
+                        Change restrictions
+                    </h3>
+
+                    <!--<div id="navbar" class="bio-details-compare">-->
+                    <!--<div id="bio-details-application" class="bio-details-current">-->
+                    <!--<table class="match-table partial-stop-file">-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                    <!--<th class="govuk-table__header" scope="row">Proposed-->
+                    <!--<td class="govuk-table__cell" style="align: left">Both restrictions should be removed.</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <!--<div id="bio-details-previous" class="bio-details-current"-->
+                    <!--style="background-color: #dee0e2;    border-left: 10px solid #6F777B;">-->
+                    <!--<table class="match-table partial-stop-file">-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                    <!--<th class="govuk-table__header" scope="row">Currrent</th>-->
+                    <!--<td class="govuk-table__cell ">-->
+                    <!--<ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+                    <!--<li>Perfusion under general anesthetic & Schedule 1 killing</li>-->
+                    <!--<li>Monday to Thursday only</li>-->
+                    <!--</ul>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current
+                        restrictions</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Perfusion under general anesthetic & Schedule 1 killing</li>
+                        <li>Monday to Thursday only</li>
+                    </ul>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">What changes are needed
+                        to
+                        the current
+                        restrictions?</h3>
+
+                    <p><span class="highlight">Both restrictions should be removed.</span></p>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+                </div><!-- < RESTRICTIONS > -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
