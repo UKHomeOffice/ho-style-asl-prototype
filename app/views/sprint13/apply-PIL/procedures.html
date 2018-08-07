@@ -50,7 +50,8 @@ Research and testing with animals prototype
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="vehicle-features-C" name="vehicle-features"
                                    type="checkbox" value="C. Surgical procedures involving general anaesthesia. Plus - administration and
-                                maintenance of balanced or prolonged general anaesthesia" {{ checked("vehicle-features", "C") }}>
+                                maintenance of balanced or prolonged general anaesthesia" {{ checked("vehicle-features",
+                            "C") }}>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-C">
                                 C. Surgical procedures involving general anaesthesia. Plus - administration and
                                 maintenance of balanced or prolonged general anaesthesia
@@ -76,12 +77,28 @@ Research and testing with animals prototype
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="vehicle-features-F" name="vehicle-features"
                                    type="checkbox"
+                                   data-aria-controls="conditional-decision-conditional-2"
                                    value="F. Other"
                                    {{ checked("vehicle-features", "F") }}>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-F">
                                 F. Other
                             </label>
                         </div>
+                        <!--<div class="govuk-radios__conditional" id="conditional-decision-conditional-2">-->
+                            <!--<div class="govuk-form-group">-->
+                                <!--<label class="govuk-label" for="conditional-decision-conditional-2">-->
+                                    <!--Enter procedures-->
+                                <!--</label>-->
+                                <!--&lt;!&ndash;<span class="govuk-hint">&ndash;&gt;-->
+                                <!--&lt;!&ndash;Add supplementary text here&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--<input autocomplete="off" class="govuk-input govuk-!-width-two-thirds"-->
+                                       <!--id="licence-number"-->
+                                       <!--name="licence-number"-->
+                                       <!--type="text">-->
+                            <!--</div>-->
+
+                        <!--</div>-->
                     </div>
                 </fieldset>
             </div>
