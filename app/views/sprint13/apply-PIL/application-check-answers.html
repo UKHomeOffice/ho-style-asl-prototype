@@ -73,49 +73,99 @@ Check your answers
         <div class="govuk-!-padding-bottom-6"></div>
 
         <h2 class="govuk-heading-m">
-            Training modules <span class="govuk-link govuk-body govuk-!-font-size-19"
-                               style="float: right; margin-top: 10px;"><a
-                href="../new-user/training">Change</a></span>
+            Training
+            <!--<span class="govuk-link govuk-body govuk-!-font-size-19"-->
+                               <!--style="float: right; margin-top: 10px;"><a-->
+                <!--href="../new-user/training">Change</a></span>-->
         </h2>
+
+        <!--<dl class="app-check-your-answers app-check-your-answers&#45;&#45;short">-->
+            <!--<div class="app-check-your-answers__contents">-->
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--L/E: Legislation & Ethics-->
+                <!--</dt>-->
+                <!--<dd class="app-check-your-answers__answer">-->
+                    <!--Date passed: 1/7/2018<br>-->
+                    <!--Certificate number: 141<br>-->
+                    <!--Accreditation body: Scottish Accreditation Board-->
+                <!--</dd>-->
+            <!--</div>-->
+            <!--<div class="app-check-your-answers__contents">-->
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--PILA (theory and skills)-->
+                <!--</dt>-->
+                <!--<dd class="app-check-your-answers__answer">-->
+                    <!--Date passed: 1/7/2017<br>-->
+                    <!--Certificate number: 121<br>-->
+                    <!--Species: Cats<br>-->
+                    <!--Accreditation body: Scottish Accreditation Board-->
+                <!--</dd>-->
+            <!--</div>-->
+            <!--<div class="app-check-your-answers__contents">-->
+                <!--<dt class="app-check-your-answers__question">-->
+                    <!--PILB-->
+                <!--</dt>-->
+                <!--<dd class="app-check-your-answers__answer">-->
+                    <!--Date passed: 1/7/2017<br>-->
+                    <!--Certificate number: 151<br>-->
+                    <!--Accreditation body: Scottish Accreditation Board-->
+                <!--</dd>-->
+            <!--</div>-->
+        <!--</dl>-->
 
         <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question">
-                    L/E: Legislation & Ethics
+                    Training 1
                 </dt>
                 <dd class="app-check-your-answers__answer">
-                    Date passed: 1/7/2018<br>
-                    Certificate number: 141<br>
-                    Accreditation body: Scottish Accreditation Board
+                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Modules</h4>
+                    <!--<ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+                    <!--{% for feature in data['features'] %}-->
+                    <!--<li>{{ feature }}</li>-->
+                    <!--{% else %}-->
+                    <!--<li>No modules selected.</li>-->
+                    <!--{% endfor %}-->
+                    <!--</ul>-->
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Module L</li>
+                        <li>Module E (level 1)</li>
+                        <li>PILA (theory) - {{ data['species-theory'] }}</li>
+                        <li>PILA (skills) - {{ data['species-skills'] }}</li>
+                        <li>PILB</li>
+                    </ul>
+
+                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Training certificate</h4>
+                    Certificate number: {{ data['certificate-number'] }}<br>
+                    Accreditor: {{ data['accrediting-body'] }}<br>
+                    Date passed: 1/7/2018 (Expires on 1/7/2023)<br>
+                    Certificate: <a href="#" class=""
+                                    target="_blank" style="color: #005EA5">
+                    certificate.jpg
+                </a>
+
+                    <div class="govuk-!-padding-bottom-4"></div>
+
                 </dd>
-            </div>
-            <div class="app-check-your-answers__contents">
-                <dt class="app-check-your-answers__question">
-                    PILA (theory and skills)
-                </dt>
-                <dd class="app-check-your-answers__answer">
-                    Date passed: 1/7/2017<br>
-                    Certificate number: 121<br>
-                    Species: Cats<br>
-                    Accreditation body: Scottish Accreditation Board
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change <span class="govuk-visually-hidden">training</span>
+                    </a>
                 </dd>
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
             </div>
-            <div class="app-check-your-answers__contents">
-                <dt class="app-check-your-answers__question">
-                    PILB
-                </dt>
-                <dd class="app-check-your-answers__answer">
-                    Date passed: 1/7/2017<br>
-                    Certificate number: 151<br>
-                    Accreditation body: Scottish Accreditation Board
-                </dd>
-            </div>
+
         </dl>
 
         <div class="govuk-!-padding-bottom-6"></div>
 
         <h2 class="govuk-heading-m">
             Procedures
+            <span class="govuk-link govuk-body govuk-!-font-size-19"
+                  style="float: right; margin-top: 10px;"><a
+                    href="../new-user/change-details">Change</a></span>
         </h2>
 
         <dl class="app-check-your-answers app-check-your-answers--long">
@@ -136,7 +186,7 @@ Check your answers
                 <dt class="app-check-your-answers__question" style="width: 30%">
                     Categories
                 </dt>
-                <dd class="app-check-your-answers__answer">
+                <dd class="app-check-your-answers__answer" style="padding-right: 80px">
                     <ul class="govuk-list govuk-list--bullet">
                         {% for feature in data['vehicle-features'] %}
                         <li>{{ feature }}</li>
@@ -145,11 +195,11 @@ Check your answers
                         {% endfor %}
                     </ul>
                 </dd>
-                <dd class="app-check-your-answers__change">
-                    <a href="#">
-                        Change <span class="govuk-visually-hidden">procedures</span>
-                    </a>
-                </dd>
+                <!--<dd class="app-check-your-answers__change">-->
+                    <!--<a href="#">-->
+                        <!--Change <span class="govuk-visually-hidden">procedures</span>-->
+                    <!--</a>-->
+                <!--</dd>-->
             </div>
         </dl>
 
