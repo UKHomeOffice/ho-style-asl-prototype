@@ -13,7 +13,9 @@ Research and testing with animals prototype
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="training" method="post" class="form">
+        <form name="aspnetForm" method="post"
+              onsubmit="multiNavigation('decision', ['Yes', 'No', '', ''], ['training', 'exemption', '', '']);return false;"
+              id="aspnetForm" autocomplete="off">
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
@@ -39,40 +41,45 @@ Research and testing with animals prototype
 
                     <div class="govuk-radios" data-module="radios" style="margin-top: -35px">
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="vehicle-type-car" name="vehicle-type" type="radio"
+                            <input class="govuk-radios__input" id="vehicle-type-car" name="decision" type="radio"
                                    data-aria-controls="conditional-decision-conditional-2"
-                                   value="Yes" {{ checked("vehicle-type", "Yes") }}>
+                                   value="Yes">
                             <label class="govuk-label govuk-radios__label" for="vehicle-type-car">
                                 Yes
                             </label>
                         </div>
-                        <!--<div class="govuk-radios__conditional" id="conditional-decision-conditional-2">-->
-                        <!--<div class="govuk-form-group">-->
-                        <!--<label class="govuk-label" for="conditional-decision-conditional-2">-->
-                        <!--Enter licence number-->
-                        <!--</label>-->
-                        <!--&lt;!&ndash;<span class="govuk-hint">&ndash;&gt;-->
-                        <!--&lt;!&ndash;Add supplementary text here&ndash;&gt;-->
-                        <!--&lt;!&ndash;</span>&ndash;&gt;-->
-                        <!--<input autocomplete="off" class="govuk-input govuk-!-width-one-quarter"-->
-                        <!--id="licence-number"-->
-                        <!--name="licence-number"-->
-                        <!--type="text">-->
-                        <!--</div>-->
 
-                        <!--</div>-->
                         <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="vehicle-type" type="radio"
-                                   value="Lorry" {{ checked("vehicle-type", "No") }}>
+                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="decision" type="radio"
+                                   data-aria-controls="exemption"
+                                   value="No">
                             <label class="govuk-label govuk-radios__label" for="vehicle-type-lorry">
                                 No
                             </label>
                         </div>
+                        <!--<div class="govuk-checkboxes__conditional govuk-checkboxes__conditional&#45;&#45;hidden"-->
+                             <!--id="exemption">-->
+                            <!--<div class="govuk-form-group">-->
+                                <!--<div class="govuk-form-group">-->
+                                    <!--<label class="govuk-label" for="exemption">-->
+                                        <!--Enter evidence if you wish to request exemption-->
+                                    <!--</label>-->
+                                    <!--<span id="more-detail-hint" class="govuk-hint">-->
+    <!--For example, you have been working as a vet on a farm in Australia for the last 6 years - during which time the training has expired.-->
+  <!--</span>-->
+                                    <!--<textarea class="govuk-textarea" id="exemption" name="exemption" rows="5"-->
+                                              <!--aria-describedby="exemption"></textarea>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
                     </div>
                 </fieldset>
             </div>
 
-            <button class="govuk-button">Continue</button>
+            <input id="advert-option-next--button" type="submit" value="Continue" class="govuk-button govuk-button"
+                   data-ignore-double-submit="true"> <br>
 
         </form>
 

@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<a href="training-question" class="govuk-back-link">Back</a>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form name="aspnetForm" method="post"
+              onsubmit="multiNavigation('exemption', ['Yes', 'No', '', ''], ['../apply-PIL/procedures-exemption', 'sorry', '', '']);return false;"
+              id="aspnetForm" autocomplete="off">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                            Are you applying for an exemption?
+                            <details class="govuk-details">
+                                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Guidance on exemption
+    </span>
+                                </summary>
+                                <div class="govuk-details__text">
+                                    Exemption from all accredited modular training requirements will be considered only
+                                    if you have acceptable equivalent formal training; typically you have held a
+                                    personal licence within the previous 5 years giving authority to use animals of the same
+                                    species and one or more techniques in the same Categories for which you are
+                                    applying.
+                                </div>
+                            </details>
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-radios" data-module="radios" style="margin-top: -35px">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-car" name="exemption" type="radio"
+                                   data-aria-controls="evidence"
+                                   value="Yes">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-car">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                             id="evidence">
+                            <div class="govuk-form-group">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="evidence">
+                                        Enter evidence
+                                    </label>
+                                    <span id="more-detail-hint" class="govuk-hint">
+                        For example, you have been working as a vet on a farm in Australia for the last 6 years - during which time the training has expired.
+                        </span>
+                                    <textarea class="govuk-textarea" id="evidence" name="evidence" rows="5"
+                                              aria-describedby="evidence"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="vehicle-type-lorry" name="exemption" type="radio"
+                                   data-aria-controls=""
+                                   value="No">
+                            <label class="govuk-label govuk-radios__label" for="vehicle-type-lorry">
+                                No
+                            </label>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <input id="advert-option-next--button" type="submit" value="Continue" class="govuk-button govuk-button"
+                   data-ignore-double-submit="true"> <br>
+
+        </form>
+
+    </div>
+</div>
+{% endblock %}

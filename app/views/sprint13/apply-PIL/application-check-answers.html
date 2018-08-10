@@ -116,7 +116,8 @@ Check your answers
         <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question">
-                    Training 1
+                    Training 1<br>
+                    <span class="govuk-hint govuk-!-font-size-16" style="margin-top: 10px">Expires on 1/7/2023</span>
                 </dt>
                 <dd class="app-check-your-answers__answer">
                     <h4 class="govuk-heading-s" style="margin-bottom: 7px">Modules</h4>
@@ -129,16 +130,17 @@ Check your answers
                     <!--</ul>-->
                     <ul class="govuk-list govuk-list--bullet">
                         <li>Module L</li>
-                        <li>Module E (level 1)</li>
+                        <li>Module E1 (Ethics)</li>
                         <li>PILA (theory) - {{ data['species-theory'] }}</li>
                         <li>PILA (skills) - {{ data['species-skills'] }}</li>
                         <li>PILB</li>
+                        <li>PILC</li>
                     </ul>
 
                     <h4 class="govuk-heading-s" style="margin-bottom: 7px">Training certificate</h4>
                     Certificate number: {{ data['certificate-number'] }}<br>
                     Accreditor: {{ data['accrediting-body'] }}<br>
-                    Date passed: 1/7/2018 (Expires on 1/7/2023)<br>
+                    Date passed: 1/7/2018<br>
                     Certificate: <a href="#" class=""
                                     target="_blank" style="color: #005EA5">
                     certificate.jpg
