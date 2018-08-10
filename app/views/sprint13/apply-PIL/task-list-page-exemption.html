@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds app-column-minimum">
+
+      <div class="govuk-!-padding-bottom-7"></div>
+
+      <h1 class="govuk-heading-l">
+        Apply for personal licence
+      </h1>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Prepare your application
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="../new-user/profile-added-training-exemption" aria-describedby="details-completed">
+                Enter your details
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="details-completed">
+                Completed
+              </strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="../new-user/profile-added-training-exemption" aria-describedby="training-completed">
+                Add training modules</a><br>
+              <span class="govuk-caption-m govuk-!-font-size-16" style="padding-top: 10px">You are applying for an exemption</span>
+              <strong class="govuk-tag app-task-list__task-completed" id="training-completed" style="margin-top: -50px">
+                Completed
+              </strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="../apply-PIL/procedures-exemption" aria-describedby="procedures-completed">
+                Add procedure categories
+              </a>
+              <!--<strong class="govuk-tag app-task-list__task-completed" id="procedures-completed">-->
+                <!--Completed-->
+              <!--</strong>-->
+            </li>
+          </ul>
+        </li>
+        <!--<li>-->
+          <!--<h2 class="app-task-list__section">-->
+            <!--<span class="app-task-list__section-number">2. </span> Declaration-->
+          <!--</h2>-->
+          <!--<ul class="app-task-list__items">-->
+            <!--<li class="app-task-list__item">-->
+              <!--<a class="app-task-list__task-name" href="declaration" aria-describedby="read-declaration-completed">-->
+                <!--Make declarations-->
+              <!--</a>-->
+              <!--&lt;!&ndash;<strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">&ndash;&gt;-->
+              <!--&lt;!&ndash;Completed&ndash;&gt;-->
+              <!--&lt;!&ndash;</strong>&ndash;&gt;-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Submit your application
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="application-check-answers">
+                Send to NTCO
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+
+{% endblock %}

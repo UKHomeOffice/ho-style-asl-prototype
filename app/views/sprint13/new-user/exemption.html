@@ -14,7 +14,7 @@ Research and testing with animals prototype
     <div class="govuk-grid-column-two-thirds">
 
         <form name="aspnetForm" method="post"
-              onsubmit="multiNavigation('exemption', ['Yes', 'No', '', ''], ['../apply-PIL/procedures-exemption', 'sorry', '', '']);return false;"
+              onsubmit="multiNavigation('exemption', ['Yes', 'No', '', ''], ['../new-user/training-exemption', 'sorry', '', '']);return false;"
               id="aspnetForm" autocomplete="off">
 
             <div class="govuk-form-group">
@@ -48,22 +48,22 @@ Research and testing with animals prototype
                                 Yes
                             </label>
                         </div>
-                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
-                             id="evidence">
-                            <div class="govuk-form-group">
-                                <div class="govuk-form-group">
-                                    <label class="govuk-label" for="evidence">
-                                        Enter evidence
-                                    </label>
-                                    <span id="more-detail-hint" class="govuk-hint">
-                        For example, you have been working as a vet on a farm in Australia for the last 6 years - during which time the training has expired.
-                        </span>
-                                    <textarea class="govuk-textarea" id="evidence" name="evidence" rows="5"
-                                              aria-describedby="evidence"></textarea>
-                                </div>
-                            </div>
+                        <!--<div class="govuk-checkboxes__conditional govuk-checkboxes__conditional&#45;&#45;hidden"-->
+                             <!--id="evidence">-->
+                            <!--<div class="govuk-form-group">-->
+                                <!--<div class="govuk-form-group">-->
+                                    <!--<label class="govuk-label" for="evidence">-->
+                                        <!--Enter reasons why you think you are exempted-->
+                                    <!--</label>-->
+                                    <!--<span id="more-detail-hint" class="govuk-hint">-->
+                        <!--For example, you have been working as a vet on a farm in Australia for the last 6 years - during which time the training has expired.-->
+                        <!--</span>-->
+                                    <!--<textarea class="govuk-textarea" id="evidence" name="evidence" rows="5"-->
+                                              <!--aria-describedby="evidence"></textarea>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                        </div>
+                        <!--</div>-->
 
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="vehicle-type-lorry" name="exemption" type="radio"
