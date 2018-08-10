@@ -6,7 +6,7 @@ Research and testing with animals prototype
 
 {% block content %}
 
-<a href="../apply-PIL/task-list-page" class="govuk-back-link">Back</a>
+<a href="../apply-PIL/task-list-page-completed" class="govuk-back-link">Back</a>
 
 <div class="govuk-!-padding-bottom-6"></div>
 
@@ -25,12 +25,12 @@ Research and testing with animals prototype
                     <span id="vehicle-features-hint" class="govuk-hint">
               Select each category that you want your licence to cover.
             </span>
-                    <div class="govuk-checkboxes" data-module="checkboxes">
+                    <div class="govuk-checkboxes">
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="vehicle-features-A"
                                    name="vehicle-features" type="checkbox" value="A. Minor/minimally invasive procedures not requiring sedation, analgesia or general
                                 anaesthesia" {{ checked("vehicle-features",
-                            "A") }}>
+                            "A") }} checked>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-A">
                                 A. Minor/minimally invasive procedures not requiring sedation, analgesia or general
                                 anaesthesia
@@ -40,7 +40,7 @@ Research and testing with animals prototype
                             <input class="govuk-checkboxes__input" id="vehicle-features-B" name="vehicle-features"
                                    type="checkbox" value="B. Minor/minimally invasive procedures involving sedation, analgesia or brief general
                                 anaesthesia. Plus surgical procedures conducted under brief non-recovery general
-                                anaesthesia" {{ checked("vehicle-features", "B") }}>
+                                anaesthesia" {{ checked("vehicle-features", "B") }} checked>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-B">
                                 B. Minor/minimally invasive procedures involving sedation, analgesia or brief general
                                 anaesthesia. Plus surgical procedures conducted under brief non-recovery general
@@ -51,7 +51,7 @@ Research and testing with animals prototype
                             <input class="govuk-checkboxes__input" id="vehicle-features-C" name="vehicle-features"
                                    type="checkbox" value="C. Surgical procedures involving general anaesthesia. Plus - administration and
                                 maintenance of balanced or prolonged general anaesthesia" {{ checked("vehicle-features",
-                            "C") }}>
+                            "C") }} checked>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-C">
                                 C. Surgical procedures involving general anaesthesia. Plus - administration and
                                 maintenance of balanced or prolonged general anaesthesia
@@ -77,24 +77,28 @@ Research and testing with animals prototype
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="vehicle-features-F" name="vehicle-features"
                                    type="checkbox"
-                                   data-aria-controls="others"
+                                   data-aria-controls="conditional-decision-conditional-2"
                                    value="F. Other"
                                    {{ checked("vehicle-features", "F") }}>
                             <label class="govuk-label govuk-checkboxes__label" for="vehicle-features-F">
                                 F. Other
                             </label>
                         </div>
-                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
-                             id="others">
-                            <div class="govuk-form-group">
-                                <label class="govuk-label" for="others">
-                                    Please specify
-                                </label>
-                                <input class="govuk-input govuk-!-width-full" id="others"
-                                       name="others" type="text">
-                            </div>
+                        <!--<div class="govuk-radios__conditional" id="conditional-decision-conditional-2">-->
+                            <!--<div class="govuk-form-group">-->
+                                <!--<label class="govuk-label" for="conditional-decision-conditional-2">-->
+                                    <!--Enter procedures-->
+                                <!--</label>-->
+                                <!--&lt;!&ndash;<span class="govuk-hint">&ndash;&gt;-->
+                                <!--&lt;!&ndash;Add supplementary text here&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                <!--<input autocomplete="off" class="govuk-input govuk-!-width-two-thirds"-->
+                                       <!--id="licence-number"-->
+                                       <!--name="licence-number"-->
+                                       <!--type="text">-->
+                            <!--</div>-->
 
-                        </div>
+                        <!--</div>-->
                     </div>
                 </fieldset>
             </div>
