@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+<div class="govuk-!-padding-bottom-4"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="profile-added-training-exemption" method="post" class="form">
+
+            <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <span class="govuk-caption-m">Step 2 of 2</span>
+                    <h1 class="govuk-fieldset__heading">
+                        Why should you be exempted from these training modules?
+                    </h1>
+                </legend>
+
+                <div class="govuk-inset-text" style="margin-top: 7px">An NTCO will only review and endorse training modules when you apply for a personal licence. Any exemption requests will also be reviewed by an inspector.</div>
+
+                <div class="govuk-form-group">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-!-font-weight-bold" for="evidence">
+                            Reasons for exemption
+                        </label>
+                        <span id="more-detail-hint" class="govuk-hint">
+                    For example, you have been working as a vet on a farm in Australia for the last 6 years - during which time your training has expired.
+                    </span>
+                        <textarea class="govuk-textarea" id="evidence" name="evidence" rows="5"
+                                  aria-describedby="evidence"></textarea>
+                    </div>
+                </div>
+
+                <button class="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

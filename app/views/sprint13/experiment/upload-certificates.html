@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+<div class="govuk-!-padding-bottom-4"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="training" method="post" class="form">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <span class="govuk-caption-m">Step 1 of 2</span>
+                        <h1 class="govuk-fieldset__heading">
+                            Enter training details
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-!-padding-bottom-1"></div>
+
+                    <div class="govuk-inset-text" style="margin-top: 7px">An NTCO will only review and endorse your training when you apply for a personal licence.</div>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="certificate-number">
+                            Certificate number
+                        </label>
+                        <input class="govuk-input govuk-input--width-20" id="certificate-number"
+                               name="certificate-number" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="accrediting-body">
+                            Accreditation body
+                        </label>
+                        <select class="govuk-select govuk-input--width-20" id="accrediting-body" name="accrediting-body" style="background-color: #fff">
+                            <option value="select" selected>Please select</option>
+                            <option value="Society of Biology">Society of Biology</option>
+                            <option value="Universities Group">Universities Group</option>
+                            <option value="Scottish Accreditation Board">Scottish Accreditation Board</option>
+                            <option value="Royal Veterinary College">Royal Veterinary College</option>
+                            <option value="Others">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="dob">
+                            Date passed
+                        </label>
+                        <span id="dob-hint" class="govuk-hint">
+                        For example, 31 3 1980
+                        </span>
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                    Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
+                                       id="dob-day"
+                                       name="dob-day" type="number" pattern="[0-9]*">
+                            </div>
+                        </div>
+
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                    Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
+                                       id="dob-month"
+                                       name="dob-month" type="number" pattern="[0-9]*">
+                            </div>
+                        </div>
+
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                    Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4 "
+                                       id="dob-year"
+                                       name="dob-year" type="number" pattern="[0-9]*">
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+            <div class="govuk-!-padding-bottom-2"></div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="file-upload-1">
+                    Upload certificate (if available)
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+
+            <div class="govuk-!-padding-bottom-2"></div>
+
+            <button class="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
