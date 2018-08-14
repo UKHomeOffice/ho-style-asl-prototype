@@ -79,12 +79,12 @@ Check your answers
         <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question">
-                    Training course<br>
+                   Courses completed<br>
                     <span class="govuk-hint govuk-!-font-size-16" style="color: #000; margin-top: 10px">Expires on 1/7/2023</span>
                 </dt>
                 <dd class="app-check-your-answers__answer">
 
-                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Training certificate</h4>
+                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Certification details</h4>
                     Certificate number: {{ data['certificate-number'] }}<br>
                     Accreditor: {{ data['accrediting-body'] }}<br>
                     Date passed: 1/7/2018<br>
@@ -141,7 +141,7 @@ Check your answers
                         <li>PILA (skills) - {{ data['species-skills'] }}</li>
                     </ul>
 
-                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Why should you be exempted from these training modules?</h4>
+                    <h4 class="govuk-heading-s" style="margin-bottom: 7px">Reasons for exemption</h4>
                     {{ data['evidence'] }}
 
                     <div class="govuk-!-padding-bottom-4"></div>
@@ -182,14 +182,14 @@ Check your answers
             <!--</div>-->
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question" style="width: 30%">
-                    Categories
+                    Procedures
                 </dt>
                 <dd class="app-check-your-answers__answer" style="padding-right: 80px">
                     <ul class="govuk-list govuk-list--bullet">
                         {% for feature in data['vehicle-features'] %}
                         <li>{{ feature }}</li>
                         {% else %}
-                        <li>No procedure categories selected.</li>
+                        <li>No procedures selected.</li>
                         {% endfor %}
                     </ul>
                 </dd>
