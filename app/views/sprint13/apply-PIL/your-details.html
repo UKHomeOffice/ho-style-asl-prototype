@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<a href="create-account" class="govuk-back-link">Back</a>-->
+
+    <div class="govuk-!-padding-bottom-8"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <form action="task-list-page-completed" method="post" class="form">
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <!--<span class="govuk-caption-m">Step 2 of 2</span>-->
+                    <h2 class="govuk-heading-l">Your details</h2>
+
+
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+                        </legend>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="title">
+                                Title (Optional)</span>
+                            </label>
+                            <input autocomplete="off" class="govuk-input govuk-!-width-one-quarter" id="title"
+                                   name="title"
+                                   type="text"
+                            value="Mr">
+                        </div>
+
+                        <!--<div class="govuk-form-group">-->
+                        <!--<label class="govuk-label" for="title">-->
+                        <!--Title <span style="color: #000">(Optional)</span>-->
+                        <!--</label>-->
+                        <!--<select class="govuk-select govuk-!-width-one-quarter" id="title" name="title" style="background-color: #fff">-->
+                        <!--<option value="Select" selected>Please select</option>-->
+                        <!--<option value="Mr">Mr</option>-->
+                        <!--<option value="Mrs">Mrs</option>-->
+                        <!--<option value="Miss">Miss</option>-->
+                        <!--<option value="Ms">Ms</option>-->
+                        <!--<option value="Dr">Dr</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
+
+                        <div class="govuk-!-padding-bottom-2"></div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="first-name">
+                                First name
+                            </label>
+                            <!--<span id="email-hint" class="govuk-hint">-->
+                            <!--Must be at least 8 characters-->
+                            <!--</span>-->
+                            <input autocomplete="off" class="govuk-input govuk-input--width-20" id="first-name"
+                                   name="first-name" type="text" value="Luigi">
+                        </div>
+
+                        <div class="govuk-!-padding-bottom-2"></div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="last-name">
+                                Last name
+                            </label>
+                            <!--<span id="email-hint" class="govuk-hint">-->
+                            <!--Must be at least 8 characters-->
+                            <!--</span>-->
+                            <input autocomplete="off" class="govuk-input govuk-input--width-20" id="last-name"
+                                   name="last-name" type="text" value="Russo">
+                        </div>
+
+                        <div class="govuk-!-padding-bottom-2"></div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="dob">
+                                Date of birth
+                            </label>
+                            <span id="dob-hint" class="govuk-hint">
+                        For example, 31 3 1980
+                        </span>
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                        Day
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
+                                           id="dob-day"
+                                           name="dob-day" type="number" pattern="[0-9]*" value="1">
+                                </div>
+                            </div>
+
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                        Month
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-2 "
+                                           id="dob-month"
+                                           name="dob-month" type="number" pattern="[0-9]*" value="3">
+                                </div>
+                            </div>
+
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                        Year
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-4 "
+                                           id="dob-year"
+                                           name="dob-year" type="number" pattern="[0-9]*" value="1978">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="phone-number">
+                            Phone or mobile number <span style="color: #000">(Optional)</span>
+                        </label>
+                        <span id="email-hint" class="govuk-hint">
+                    If there are any urgent problems with your application, you may be contacted by a member of ASRU.
+                    </span>
+                        <input autocomplete="off" class="govuk-input govuk-input--width-20" id="phone-number"
+                               name="phone-number" type="number" value="07717723456">
+                    </div>
+
+                    </fieldset>
+
+                    <br>
+
+                    <button class="govuk-button">Confirm</button>
+
+                    <!--<a href="check-your-answers" class="govuk-button" type="submit">-->
+                    <!--Confirm-->
+                    <!--</a>-->
+
+        </form>
+
+</div>
+</div>
+</div>
+
+</main>
+</div>
+
+
+{% endblock %}
