@@ -35,10 +35,11 @@ Task list
                     <li class="app-task-list__item">
                         <a class="app-task-list__task-name" href="add-training/question"
                            aria-describedby="training-completed" style="width: 100%">
-                            Add training/exemptions</a>
+                            Training and exemptions</a>
                         <div class="govuk-inset-text govuk-!-font-size-16"
                         " style="margin-bottom: 0px">
-                        You've got training in modules L, E1, PILA (theory), PILB, PILC.
+                        Training modules: L, E1, PILA (theory) - {{ data['species-theory'] }}, PILB, PILC.
+
     </div>
 
     <strong class="govuk-tag app-task-list__task-completed" id="training-completed"
@@ -49,7 +50,7 @@ Task list
     </li>
     <li class="app-task-list__item">
         <a class="app-task-list__task-name" href="procedures" style="width: 100%">
-            Select procedure categories
+            Procedure categories
         </a>
     </li>
     </ul>
