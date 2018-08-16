@@ -112,12 +112,23 @@ Research and testing with animals prototype
                         </div>
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="features-H" name="features"
-                                   type="checkbox"
+                                   type="checkbox" data-aria-controls="species-skills-K"
                                    value="K (skills)"
                                    {{ checked("features", "H") }}>
                             <label class="govuk-label govuk-checkboxes__label" for="features-H">
                                 K (skills)
                             </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                             id="species-skills-K">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="species-skills-K">
+                                    Please specify a species. For example, rats, rabbits, rodents.
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="species-skills-K"
+                                       name="species-skills-K" type="text">
+                            </div>
+
                         </div>
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="features-I" name="features"
