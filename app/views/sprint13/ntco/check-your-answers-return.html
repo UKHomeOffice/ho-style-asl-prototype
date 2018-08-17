@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-!-padding-bottom-4"></div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+            Confirm decision
+        </h1>
+
+        <div class="govuk-!-padding-bottom-2"></div>
+
+        <!-- only add a heading for a list if there is more than one list -->
+        <h2 class="govuk-heading-m">
+            Your decision
+        </h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Decision
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    Return to applicant
+                </dd>
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change
+                    </a>
+                </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                    Explanation
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                    {{ data['more-detail'] }}
+                </dd>
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change
+                    </a>
+                </dd>
+            </div>
+
+        </dl>
+
+        <div class="govuk-!-padding-bottom-4"></div>
+
+        <a class="govuk-button" href="confirmation-page-returned" role="button">
+            Submit
+        </a>
+
+    </div>
+</div>
+{% endblock %}

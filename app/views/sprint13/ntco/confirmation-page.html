@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <!--<div class="govuk-panel govuk-panel&#45;&#45;confirmation">-->
+        <!--<h2 class="govuk-panel__title">Application complete</h2>-->
+        <!--<div class="govuk-panel__body">-->
+        <!--Your reference number<br><strong>HDJ2123F</strong>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <div class="govuk-box-highlight confirm-page">
+            <span class="hod-checkmark" style="color: #fff"></span>
+            <h2 class="govuk-heading-l" style="color: #fff; text-align: center">
+                Application submitted
+            </h2>
+            <p style="color: #fff; text-align: center">The applicant has been notified about your decision.</p>
+            <!--<p style="color: #fff; text-align: center">-->
+            <!--Your reference number is <br>-->
+            <!--<strong class="govuk-heading-m" style="color: #fff;">HDJ2123F</strong>-->
+            <!--</p>-->
+        </div>
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <h2 class="govuk-heading-m">What happens next?</h2>
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                The applicant is not licensed to carry out any new procedures until your licence application has
+                been approved.
+            </strong>
+        </div>
+
+        <p>ASRU will review the application, and will forward them to an inspector if required. They may be in touch if
+            they need more information.</p>
+
+        <br>
+        <!--<a class="govuk-button" href="" role="button">-->
+        <!--Back to My Tasks-->
+        <!--</a>-->
+        <a href="">Back to my Tasks</a>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

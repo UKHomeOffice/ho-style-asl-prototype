@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-!-padding-bottom-4"></div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+            Confirm decision
+        </h1>
+
+        <div class="govuk-!-padding-bottom-2"></div>
+
+        <!-- only add a heading for a list if there is more than one list -->
+        <h2 class="govuk-heading-m">
+            Your decision
+        </h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+                <!--<dt class="app-check-your-answers__question">-->
+                <!--Decision-->
+                <!--</dt>-->
+                <dd class="app-check-your-answers__answer">
+                    {{ data['decision'] }}
+                </dd>
+                <dd class="app-check-your-answers__change">
+                    <a href="#">
+                        Change
+                    </a>
+                </dd>
+            </div>
+
+            <div class="govuk-!-padding-bottom-8"></div>
+
+            <h2 class="govuk-heading-m">
+                Declaration
+            </h2>
+
+            <p class="govuk-body">By sending the application you agree that:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>I have the authority of the establishment licence holder to endorse this application, and they are
+                    aware that this establishment will have financial responsibility for the licence if granted.
+                </li>
+                <li>I confirm that the applicant holds the necessary training or experience to carry out the categories
+                    of procedure listed in this personal licence application.
+                </li>
+            </ul>
+
+            <!--<div class="govuk-warning-text">-->
+            <!--<span class="govuk-warning-text__icon" aria-hidden="true">!</span>-->
+            <!--<strong class="govuk-warning-text__text">-->
+            <!--<span class="govuk-warning-text__assistive">Warning</span>-->
+            <!--You could be prosecuted or have to pay a penalty if you deliberately give the wrong or incomplete-->
+            <!--information or don’t report changes.-->
+            <!--</strong>-->
+            <!--</div>-->
+
+            <div class="govuk-!-padding-bottom-2"></div>
+
+            <a class="govuk-button" href="confirmation-page" role="button">
+                I agree - send the application
+            </a>
+
+        </dl>
+
+    </div>
+</div>
+{% endblock %}
