@@ -1344,8 +1344,8 @@ table.clickable tr > td { cursor: pointer; }
 }
 
 .appstatus-steps span {
-  border-bottom: 3px solid #2b8cc4;
-  color: #2b8cc4;
+  border-bottom: 3px solid #fff;
+  color: #00823B;
   display: block;
   font-weight: bold;
   padding: 10px 0;
@@ -1376,4 +1376,8 @@ table.clickable tr > td { cursor: pointer; }
   border-bottom-width: 6px;
   color: #fff;
   padding-bottom: 7px
+}
+
+.appstatus-steps .appstatus-unprocessed {
+  border-color: #00823B;
 }
