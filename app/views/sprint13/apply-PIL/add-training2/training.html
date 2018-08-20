@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+<div class="govuk-!-padding-bottom-4"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form action="question-add-another" method="post" class="form">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="features-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <span class="govuk-caption-m">Step 2 of 2</span>
+                        <h1 class="govuk-fieldset__heading">
+                            Which modules did this training course cover?
+                        </h1>
+                    </legend>
+                    <span id="vehicle-features-hint" class="govuk-hint">
+              Select all that apply.
+            </span>
+                    <div class="govuk-checkboxes" data-module="checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-A"
+                                   name="features" type="checkbox" value="Module L" {{ checked("features",
+                            "A") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-A">
+                                L
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-B" name="features"
+                                   type="checkbox" value="Module E (level 1)" {{ checked("features",
+                            "B") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-B">
+                                E1
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-C" name="features"
+                                   type="checkbox" data-aria-controls="species-theory" value="PILA (theory)" {{ checked("features",
+                            "C") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-C">
+                                PILA (theory)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                             id="species-theory">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="species-theory">
+                                    Please specify a species. For example, rats, rabbits, rodents.
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="species-theory"
+                                       name="species-theory" type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-D" name="features"
+                                   type="checkbox" data-aria-controls="species-skills" value="PILA (skills)" {{ checked("features",
+                            "D") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-D">
+                                PILA (skills)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                             id="species-skills">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="species-skills">
+                                    Please specify a species. For example, rats, rabbits, rodents.
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="species-skills"
+                                       name="species-skills" type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-E" name="features"
+                                   type="checkbox"
+                                   value="PILB"
+                                   {{ checked("features", "E") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-E">
+                                PILB
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-F" name="features"
+                                   type="checkbox"
+                                   value="PILC"
+                                   {{ checked("features", "F") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-F">
+                                PILC
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-G" name="features"
+                                   type="checkbox"
+                                   value="K (theory)"
+                                   {{ checked("features", "G") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-G">
+                                K (theory)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-H" name="features"
+                                   type="checkbox" data-aria-controls="species-skills-K"
+                                   value="K (skills)"
+                                   {{ checked("features", "H") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-H">
+                                K (skills)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                             id="species-skills-K">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="species-skills-K">
+                                    Please specify a species. For example, rats, rabbits, rodents.
+                                </label>
+                                <input class="govuk-input govuk-!-width-two-thirds" id="species-skills-K"
+                                       name="species-skills-K" type="text">
+                            </div>
+
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-I" name="features"
+                                   type="checkbox"
+                                   value="E2"
+                                   {{ checked("features", "I") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-I">
+                                E2
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-J" name="features"
+                                   type="checkbox"
+                                   value="PPL"
+                                   {{ checked("features", "J") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-J">
+                                PPL
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="features-K" name="features"
+                                   type="checkbox"
+                                   value="KD"
+                                   {{ checked("features", "K") }}>
+                            <label class="govuk-label govuk-checkboxes__label" for="features-K">
+                                KD
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <button class="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+{% endblock %}

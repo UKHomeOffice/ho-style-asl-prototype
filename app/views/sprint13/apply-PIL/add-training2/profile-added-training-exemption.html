@@ -1,0 +1,216 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+    <!--<div class="govuk-breadcrumbs">-->
+        <!--<ol class="govuk-breadcrumbs__list">-->
+            <!--<li class="govuk-breadcrumbs__list-item">-->
+                <!--<a class="govuk-breadcrumbs__link" href="homepage">Home</a>-->
+            <!--</li>-->
+            <!--<li class="govuk-breadcrumbs__list-item">-->
+                <!--<a class="govuk-breadcrumbs__link" href="#">Profile</a>-->
+            <!--</li>-->
+        <!--</ol>-->
+    <!--</div>-->
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-l">Profile
+                    <!--<span class="govuk-caption-m">Last updated 22 August 2018</span>-->
+                </h2>
+
+
+                <h2 class="govuk-heading-m">
+                    Your details <span class="govuk-link govuk-!-font-size-19"
+                                       style="float: right; margin-top: 10px;"><a
+                        href="change-details">Change</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Title
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Mr
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            First name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Luigi
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Last name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Russo
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Date of birth
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            1/3/1978
+                            <!--{{ data[‘dob-day’] }}/{{ data[‘dob-month’] }}/{{ data[‘dob-year’] }}-->
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Email address
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            luigi.russo@birmingham.ac.uk
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Phone number
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            07717723456
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
+                <h2 class="govuk-heading-m">
+                    Training<span class="govuk-link govuk-!-font-size-19" style="float: right; margin-top: 10px;"><a
+                        href="question">Add</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--short" style="margin-top: -10px">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Certificate number: {{ data['certificate-number'] }} <br>
+                            <span class="govuk-hint govuk-!-font-size-16" style="color: #000; margin-top: 10px">Expires on 1/7/2023</span>
+                        </dt>
+                        <dd class="app-check-your-answers__answer" style="width: 40%">
+                            <h4 class="govuk-heading-s" style="margin-bottom: 7px">Certification details</h4>
+                            <!--Certificate number: {{ data['certificate-number'] }}<br>-->
+                            Accreditation body: {{ data['accrediting-body'] }}<br>
+                            Date awarded: 1/7/2018 <br>
+                            Certificate: <a href="#" class=""
+                                            target="_blank" style="color: #005EA5">
+                            certificate.jpg
+                        </a>
+
+                            <div class="govuk-!-padding-bottom-6"></div>
+
+                            <h4 class="govuk-heading-s" style="margin-bottom: 7px">Modules</h4>
+                            <!--<ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+                            <!--{% for feature in data['features'] %}-->
+                            <!--<li>{{ feature }}</li>-->
+                            <!--{% else %}-->
+                            <!--<li>No modules selected.</li>-->
+                            <!--{% endfor %}-->
+                            <!--</ul>-->
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>L</li>
+                                <li>E1</li>
+                                <li>PILA (theory) - {{ data['species-theory'] }}</li>
+                                <li>PILB</li>
+                                <li>PILC</li>
+                            </ul>
+
+
+                        </dd>
+                        <dd class="app-check-your-answers__change">
+                            <a href="#">Change</a> I <a href="#">Remove</a>
+                        </dd>
+
+                        <div class="govuk-!-padding-bottom-6"></div>
+
+                    </div>
+
+                </dl>
+
+                <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Exemptions<br>
+                            <!--<span class="hod-circle side-space icon-medium"></span>-->
+                            <span class="govuk-hint govuk-!-font-size-16" style="color: #000; margin-top: 10px"></span>
+                        </dt>
+                        <dd class="app-check-your-answers__answer" style="width: 45%">
+                            <h4 class="govuk-heading-s" style="margin-bottom: 7px">Modules</h4>
+                            <!--<ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+                            <!--{% for feature in data['features'] %}-->
+                            <!--<li>{{ feature }}</li>-->
+                            <!--{% else %}-->
+                            <!--<li>No modules selected.</li>-->
+                            <!--{% endfor %}-->
+                            <!--</ul>-->
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>PILA (skills) - {{ data['species-skills-exemption'] }}</li>
+                            </ul>
+
+                            <h4 class="govuk-heading-s" style="margin-bottom: 7px">Reasons for exemption</h4>
+                            {{ data['evidence'] }}
+
+                            <div class="govuk-!-padding-bottom-4"></div>
+
+                        </dd>
+                        <dd class="app-check-your-answers__change">
+                            <a href="#">Change</a> I <a href="#">Remove</a>
+                        </dd>
+
+                        <div class="govuk-!-padding-bottom-6"></div>
+
+                    </div>
+
+                </dl>
+
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+
+                <aside class="app-related-items" role="complementary" style="border-top: 2px solid #8F23B3;
+    margin-top: 80px;">
+                    <div class="govuk-!-padding-bottom-3"></div>
+
+                    <h4 class="govuk-heading-s">Personal licence
+                        <br><br>
+                        <p class="govuk-body govuk-!-font-size-16">You don't hold a personal (PIL) licence.</p>
+                        <a href="../apply-PIL/task-list-page" class="govuk-button" type="submit">
+                            Apply now
+                        </a>
+
+                        <!--<h4 class="govuk-heading-s">Permissions: Basic-->
+                            <!--<br><br>-->
+
+                            <!--<p class="govuk-body govuk-!-font-size-16">-->
+                                <!--To change your permissions, contact an administrator at your establishment.-->
+                            <!--</p>-->
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+</div>
+
+{% endblock %}

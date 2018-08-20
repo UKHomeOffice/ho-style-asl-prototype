@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+    <!--<div class="govuk-breadcrumbs">-->
+        <!--<ol class="govuk-breadcrumbs__list">-->
+            <!--<li class="govuk-breadcrumbs__list-item">-->
+                <!--<a class="govuk-breadcrumbs__link" href="homepage">Home</a>-->
+            <!--</li>-->
+            <!--<li class="govuk-breadcrumbs__list-item">-->
+                <!--<a class="govuk-breadcrumbs__link" href="#">Profile</a>-->
+            <!--</li>-->
+        <!--</ol>-->
+    <!--</div>-->
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-l">Profile
+                    <!--<span class="govuk-caption-m">Last updated 22 August 2018</span>-->
+                </h2>
+
+
+                <h2 class="govuk-heading-m">
+                    Your details <span class="govuk-link govuk-!-font-size-19"
+                                       style="float: right; margin-top: 10px;"><a
+                        href="change-details">Change</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Title
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Mr
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            First name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Luigi
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Last name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Russo
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Date of birth
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            1/3/1978
+                            <!--{{ data[‘dob-day’] }}/{{ data[‘dob-month’] }}/{{ data[‘dob-year’] }}-->
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Email address
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            luigi.russo@birmingham.ac.uk
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Phone number
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            07717723456
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
+                <h2 class="govuk-heading-m">
+                    Training<span class="govuk-link govuk-!-font-size-19" style="float: right; margin-top: 10px;"><a
+                        href="question">Add</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--long">
+                    <p>
+                        You haven't added any training yet.
+                    </p>
+
+                    <div class="govuk-inset-text" style="margin-top: 5px">
+                        Exemptions from training modules will only be considered if you can demonstrate that you have the required knowledge and levels of competence.
+                    </div>
+                </dl>
+
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+
+                <aside class="app-related-items" role="complementary" style="border-top: 2px solid #8F23B3;
+    margin-top: 80px;">
+                    <div class="govuk-!-padding-bottom-3"></div>
+
+                    <h4 class="govuk-heading-s">Personal licence
+                        <br><br>
+                        <p class="govuk-body govuk-!-font-size-16">You don't hold a personal (PIL) licence.</p>
+                        <a href="#" class="govuk-button" type="submit">
+                            Apply now
+                        </a>
+
+                        <!--<h4 class="govuk-heading-s">Permissions: Basic-->
+                            <!--<br><br>-->
+
+                            <!--<p class="govuk-body govuk-!-font-size-16">-->
+                                <!--To change your permissions, contact an administrator at your establishment.-->
+                            <!--</p>-->
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+</div>
+
+{% endblock %}
