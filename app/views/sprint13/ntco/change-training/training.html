@@ -13,7 +13,7 @@ Research and testing with animals prototype
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <form action="../decision" method="post" class="form">
+        <form action="../training" method="post" class="form">
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="features-hint">
@@ -26,6 +26,8 @@ Research and testing with animals prototype
                     <span id="vehicle-features-hint" class="govuk-hint">
               Select all that apply.
             </span>
+                    <div class="govuk-!-padding-bottom-1"></div>
+
                     <div class="govuk-checkboxes" data-module="checkboxes">
                         <div class="govuk-checkboxes__item">
                             <input class="govuk-checkboxes__input" id="features-A"
@@ -161,7 +163,14 @@ Research and testing with animals prototype
                 </fieldset>
             </div>
 
-            <button class="govuk-button">Confirm</button>
+            <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                    <span class="govuk-warning-text__assistive">Warning</span>
+                    You must inform the applicant if you’ve made any changes.
+                </strong>
+            </div>
+            <button class="govuk-button">Change and confirm</button>
 
         </form>
 
