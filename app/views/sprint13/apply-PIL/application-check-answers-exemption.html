@@ -184,18 +184,14 @@ Check your answers
             <!--</div>-->
             <div class="app-check-your-answers__contents">
                 <dt class="app-check-your-answers__question" style="width: 30%">
-<<<<<<< HEAD
                     Categories
-=======
-                    Procedure categories
->>>>>>> 8bdd0b79e108fca4bd002bd82a57dd0ab15c4369
                 </dt>
                 <dd class="app-check-your-answers__answer" style="padding-right: 80px">
                     <ul class="govuk-list govuk-list--bullet">
                         {% for feature in data['vehicle-features'] %}
                         <li>{{ feature }}</li>
                         {% else %}
-                        <li>No procedures selected.</li>
+                        <li>No categories selected.</li>
                         {% endfor %}
                     </ul>
                 </dd>
