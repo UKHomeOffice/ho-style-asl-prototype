@@ -1,0 +1,225 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back</a>
+
+    <div class="govuk-!-padding-bottom-1"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <!--<div style="margin: 30px 0;">-->
+
+            <h2 class="govuk-heading-l">Amend approved area</h2>
+
+            <div class="govuk-inset-text">
+                Submitted by Angela Smith on behalf of William Blanc on 2 June 2018.
+                <div class="govuk-!-padding-bottom-2"></div>
+                Recommendation provided by Irene Miles on 6 June 2018.
+            </div>
+
+            <div class="govuk-!-padding-bottom-3"></div>
+
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--m">
+
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+                <ul class="leftnav">
+                    <li>
+                        <a href="decision"
+                           class="leftnavlinks application-details" data-target="application-details">
+                            Inspector's recommendation
+                            <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                            <!--<span class="tag tag&#45;&#45;risk" style="display: none;">Incomplete</span>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="leftnavlinks decision active" data-target="decision">
+                            Make a decision
+                            <span class="tag tag--complete" style="display: none;">Complete</span>
+                        </a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="#"-->
+                    <!--class="leftnavlinks recommendation" data-target="recommendation">-->
+                    <!--Your recommendation-->
+                    <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<hr style="margin:0">-->
+                    <!--<a href="#"-->
+                    <!--class="leftnavlinks notes active" data-target="notes">-->
+                    <!--Make a decision-->
+                    <!--&lt;!&ndash;<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="#"-->
+                    <!--class="leftnavlinks history" data-target="history">-->
+                    <!--Application history-->
+                    <!--<span class="tag tag&#45;&#45;complete" style="display: none;">Complete</span>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div> <!-- /Tab menu -->
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <form name="aspnetForm" method="post"
+                      onsubmit="multiNavigation('decision', ['Approve', 'Reject', 'Return to inspector', ''], ['check-your-answers-approve', 'check-your-answers', 'check-your-answers', '']);return false;"
+                      id="aspnetForm" autocomplete="off">
+
+                    <div class="govuk-form-group">
+                        <h2 class="govuk-heading-l">What do you want to do?</h2>
+
+                        <div class="govuk-!-padding-bottom-4"></div>
+
+                        <label class="govuk-heading-m" for="change-restrictions">
+                            Change current restrictions
+                        </label>
+
+                        <div id="p_scents">
+                            <label class="govuk-label" for="p_scnts">
+                                Restriction
+                            </label>
+                            <a href="decision_make-remove" style="float: right; padding-right: 0px; margin-top: -30px;">Remove</a>
+                            <textarea class="govuk-textarea" id="p_scnt" name="p_scnt" rows="2"
+                                      aria-describedby="more-detail-hint">Perfusion under general anesthetic & Schedule 1 killing
+                    </textarea>
+                        </div>
+
+                        <!--<input class="govuk-input govuk-!-width-three-quarters" id="restriction-1"-->
+                        <!--name="restriction-1" type="text"-->
+                        <!--aria-describedby="restriction-hint"-->
+                        <!--value="Perfusion under general anesthetic & Schedule 1 killing">-->
+
+
+                        <label class="govuk-label" for="restriction-1">
+                            Restriction
+                        </label>
+                        <a href="#" style="float: right; padding-right: 0px; margin-top: -30px;">Remove</a>
+                        <textarea class="govuk-textarea" id="restriction-1" name="restriction-1" rows="2"
+                                  aria-describedby="more-detail-hint">Monday to Thursday only
+                    </textarea>
+
+
+                        <a href="#" id="addScnt">Add new restriction</a>
+
+
+                    </div>
+
+                    <!--<hr class="govuk-section-break govuk-section-break&#45;&#45;xl govuk-section-break&#45;&#45;visible">-->
+                    <div class="govuk-!-padding-bottom-7"></div>
+
+                    <div class="govuk-form-group">
+                        <h3 class="govuk-heading-m">What is your decision?</h3>
+                        <fieldset class="govuk-fieldset">
+                            <!--<legend class="govuk-fieldset__legend govuk-fieldset__legend&#45;&#45;m">-->
+                            <!--<h1 class="govuk-fieldset__heading">-->
+                            <!--Text goes here-->
+                            <!--</h1>-->
+                            <!--</legend>-->
+                            <div class="govuk-radios" data-module="radios">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="decision-conditional-1"
+                                           name="decision"
+                                           type="radio" value="Approve"
+                                           data-aria-controls="conditional-decision-conditional-1">
+                                    <label class="govuk-label govuk-radios__label" for="decision-conditional-1">
+                                        Approve
+                                        <!--<span id="more-detail-hint" class="govuk-hint">-->
+                                        <!--All changes will be updated in the system once granted.-->
+                                        <!--</span>-->
+                                    </label>
+
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="decision-conditional-2"
+                                           name="decision"
+                                           type="radio" value="Reject"
+                                           data-aria-controls="conditional-decision-conditional-2">
+                                    <label class="govuk-label govuk-radios__label" for="decision-conditional-2">
+                                        Reject
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional" id="conditional-decision-conditional-2">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="conditional-decision-conditional-2">
+                                            Explain your decision to the applicant.
+                                        </label>
+                                        <!--<span class="govuk-hint">-->
+                                        <!--Add supplementary text here-->
+                                        <!--</span>-->
+                                        <textarea class="govuk-textarea" id="decision-reject"
+                                                  name="more-detail" rows="5"
+                                                  aria-describedby="more-detail-hint"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="decision-conditional-3"
+                                           name="decision"
+                                           type="radio" value="Return to inspector"
+                                           data-aria-controls="conditional-decision-conditional-3">
+                                    <label class="govuk-label govuk-radios__label" for="decision-conditional-3">
+                                        Return to inspector
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__conditional" id="conditional-decision-conditional-3">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="conditional-decision-conditional-3">
+                                            Explain your decision to the inspector.
+                                        </label>
+                                        <textarea class="govuk-textarea" id="decision-return"
+                                                  name="more-detail" rows="5"
+                                                  aria-describedby="more-detail-hint"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <input id="advert-option-next--button" type="submit" value="Confirm" class="govuk-button govuk-button"
+                           data-ignore-double-submit="true"> <br>
+
+                    <!--<a href="#" class="govuk-link">Reassign to another officer</a>-->
+
+                    <!--<button type="submit" class="button-secondary">-->
+                    <!--Reallocate to team-->
+                    <!--</button>-->
+
+                </form>
+            </div>
+
+            <div class="govuk-!-padding-bottom-8"></div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

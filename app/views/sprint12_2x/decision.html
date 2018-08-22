@@ -1,0 +1,336 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="govuk-phase-banner">-->
+<!--<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">-->
+<!--Prototype-->
+<!--</strong>-->
+<!--<span class="govuk-phase-banner__text">-->
+<!--This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.-->
+<!--</span>-->
+<!--</p>-->
+<!--</div>-->
+
+<div class="govuk-width-container">
+    <a href="tasks" class="govuk-back-link">Back to Tasks</a>
+
+    <div class="govuk-!-padding-bottom-4"></div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <h2 class="govuk-heading-l">Amend approved area
+                <!--<span class="govuk-caption-m">University of Birmingham</span>-->
+            </h2>
+
+        </div>
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third">
+
+                <!-- < CONTENT NAVIGATION > -->
+                <ul class="leftnav">
+                    <li>
+                        <a href=""
+                           class="leftnavlinks application-details active" data-target="application-details">
+                            1. View proposed amendment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recommendation"
+                           class="leftnavlinks recommendation" data-target="recommendation">
+                            2. View inspector recommendation
+                        </a>
+                    </li>
+                    <li>
+                        <hr style="margin:0">
+                        <a href="restrictions"
+                           class="leftnavlinks restrictions" data-target="restrictions">
+                            3. Change restrictions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="make-decision"
+                           class="leftnavlinks decision" data-target="decision">
+                            4. Make decision
+                        </a>
+                    </li>
+                </ul>
+                <!-- </ CONTENT NAVIGATION > -->
+            </div>
+
+
+            <div class="govuk-grid-column-two-thirds">
+
+                <!-- < APPLICATION DETAILS > -->
+                <div id="application-details" class="leftnavcontent" style="display: block;">
+                    <!--<div class="leftnavcontent" id="application-details">-->
+
+                    <h3 class="govuk-heading-m">
+                        Step 1: Proposed amendment
+                    </h3>
+
+                    <div class="govuk-inset-text">
+                        Submitted by <a href="#">Angela Smith</a> on behalf of <a href="#">William Blanc</a> on 2 June
+                        2018.
+                        <!--<div class="govuk-!-padding-bottom-2"></div>-->
+                    </div>
+
+                    <!--<details class="govuk-details">-->
+                    <!--<summary class="govuk-details__summary">-->
+                    <!--<span class="govuk-details__summary-text">-->
+                    <!--About this establishment-->
+                    <!--</span>-->
+                    <!--</summary>-->
+                    <!--<div class="govuk-details__text">-->
+                    <!--<table class="govuk-table">-->
+                    <!--<tbody class="govuk-table__body">-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Establishment</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">University of Birmingham</a>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Licence number</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s "><a href="#">XXXXXXXX</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Licence holder</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">William Blanc</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Single Point of Contact-->
+                    <!--(SPoC)-->
+                    <!--</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">Barry Taylor</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Inspector</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">Irene Miles</a></td>-->
+                    <!--</tr>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <!--</details>-->
+
+                    <!--<hr class="govuk-section-break govuk-section-break&#45;&#45;m govuk-section-break&#45;&#45;visible">-->
+                    <!--<div class="govuk-!-padding-bottom-1"></div>-->
+
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="col"></th>
+                            <th class="govuk-table__header" scope="col">Current</th>
+                            <th class="govuk-table__header" scope="col">Proposed</th>
+                        </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Site</th>
+                            <td class="govuk-table__cell ">Apollo House</td>
+                            <td class="govuk-table__cell ">Apollo House</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Area</th>
+                            <td class="govuk-table__cell ">1/F</td>
+                            <td class="govuk-table__cell ">1/F</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Name</th>
+                            <td class="govuk-table__cell ">LG36</td>
+                            <td class="govuk-table__cell ">LG36</td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Suitability</th>
+                            <td class="govuk-table__cell ">SA</td>
+                            <td class="govuk-table__cell ">SA, <span class="highlight">AV</span>, <span
+                                    class="highlight">DOG</span></td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">Holding</th>
+                            <td class="govuk-table__cell ">STH</td>
+                            <td class="govuk-table__cell "><span class="highlight">LTH</span></td>
+                        </tr>
+                        <tr class="govuk-table__row noBorder">
+                            <th class="govuk-table__header" scope="row">NACWO</th>
+                            <td class="govuk-table__cell "><a href="#"
+                                                              class="govuk-link govuk-link--no-visited-state">Gareth
+                                Tindall</a></td>
+                            <td class="govuk-table__cell "><a href="#"
+                                                              class="govuk-link govuk-link--no-visited-state">Gareth
+                                Tindall</a></td>
+                        </tr>
+                    </table>
+
+                    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current
+                        restrictions</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Perfusion under general anesthetic & Schedule 1 killing</li>
+                        <li>Monday to Thursday only</li>
+                    </ul>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">What changes are needed
+                        to
+                        the current
+                        restrictions?</h3>
+
+                    <p><span class="highlight">Both restrictions should be removed.</span></p>
+
+                    <!--<hr class="govuk-section-break govuk-section-break&#45;&#45;xl govuk-section-break&#45;&#45;visible">-->
+
+                    <!--<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">-->
+                        <!--<ul class="gem-c-pagination__list" data-module="track-click">-->
+                        <!--&lt;!&ndash;<li class="gem-c-pagination__item gem-c-pagination__item&#45;&#45;previous" style="float: left; margin-left: -35px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<a href="#"&ndash;&gt;-->
+                                   <!--&lt;!&ndash;class="gem-c-pagination__link" rel="prev" data-track-category="contentsClicked"&ndash;&gt;-->
+                                   <!--&lt;!&ndash;data-track-action="previous" data-track-label="/"&ndash;&gt;-->
+                                   <!--&lt;!&ndash;data-track-dimension="previous" data-track-dimension-index="29">&ndash;&gt;-->
+          <!--&lt;!&ndash;<span class="gem-c-pagination__link-title">&ndash;&gt;-->
+            <!--&lt;!&ndash;<svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"&ndash;&gt;-->
+                 <!--&lt;!&ndash;viewBox="0 0 17 13">&ndash;&gt;-->
+              <!--&lt;!&ndash;<path fill="currentColor"&ndash;&gt;-->
+                    <!--&lt;!&ndash;d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>&ndash;&gt;-->
+            <!--&lt;!&ndash;</svg>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="gem-c-pagination__link-text">&ndash;&gt;-->
+              <!--&lt;!&ndash;Previous&ndash;&gt;-->
+            <!--&lt;!&ndash;</span>&ndash;&gt;-->
+          <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<span class="visually-hidden"></span>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<span class="gem-c-pagination__link-label">View proposed amendment</span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--<li class="gem-c-pagination__item gem-c-pagination__item&#45;&#45;next" style="float: right">-->
+                                <!--<a href="recommendation"-->
+                                   <!--class="gem-c-pagination__link" rel="next" data-track-category="contentsClicked"-->
+                                   <!--data-track-action="next"-->
+                                   <!--data-track-label=""-->
+                                   <!--data-track-dimension="next" data-track-dimension-index="29">-->
+          <!--<span class="gem-c-pagination__link-title">-->
+            <!--<svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"-->
+                 <!--viewBox="0 0 17 13">-->
+              <!--<path fill="currentColor"-->
+                    <!--d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>-->
+            <!--</svg>-->
+            <!--<span class="gem-c-pagination__link-text">-->
+              <!--Next-->
+            <!--</span>-->
+          <!--</span>-->
+                                    <!--<span class="visually-hidden"></span>-->
+                                    <!--<span class="gem-c-pagination__link-label">View inspector recommendation</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</nav>-->
+
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <!--<div class="establishment-card" style="margin-top: -0px;">-->
+
+                    <!--<h4 class="govuk-heading-s">-->
+                    <!--About this establishment-->
+                    <!--</h4>-->
+                    <!--<table class="govuk-table">-->
+                    <!--<tbody class="govuk-table__body">-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Establishment</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">University of Birmingham</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Licence number</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s "><a href="#">XXXXXXXX</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Licence holder</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">William Blanc</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Single Point of Contact (SPoC)-->
+                    <!--</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">Barry Taylor</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr class="govuk-table__row noBorder">-->
+                    <!--<th class="govuk-table__cell govuk-body-s" scope="row">Inspector</th>-->
+                    <!--<td class="govuk-table__cell govuk-body-s"><a href="#">Irene Miles</a></td>-->
+                    <!--</tr>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <br>
+
+                </div><!-- < APPLICATION DETAILS > -->
+
+
+                <!-- < RESTRICTIONS > -->
+                <div id="restrictions" class="leftnavcontent" style="display: none;">
+
+                    <div class="govuk-!-padding-bottom-8"></div>
+                    <h3 class="govuk-heading-m">
+                        Change restrictions
+                    </h3>
+
+                    <!--<div id="navbar" class="bio-details-compare">-->
+                    <!--<div id="bio-details-application" class="bio-details-current">-->
+                    <!--<table class="match-table partial-stop-file">-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                    <!--<th class="govuk-table__header" scope="row">Proposed-->
+                    <!--<td class="govuk-table__cell" style="align: left">Both restrictions should be removed.</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <!--<div id="bio-details-previous" class="bio-details-current"-->
+                    <!--style="background-color: #dee0e2;    border-left: 10px solid #6F777B;">-->
+                    <!--<table class="match-table partial-stop-file">-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                    <!--<th class="govuk-table__header" scope="row">Currrent</th>-->
+                    <!--<td class="govuk-table__cell ">-->
+                    <!--<ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+                    <!--<li>Perfusion under general anesthetic & Schedule 1 killing</li>-->
+                    <!--<li>Monday to Thursday only</li>-->
+                    <!--</ul>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                    <!--</table>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">Current
+                        restrictions</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Perfusion under general anesthetic & Schedule 1 killing</li>
+                        <li>Monday to Thursday only</li>
+                    </ul>
+
+                    <div class="govuk-!-padding-bottom-2"></div>
+
+                    <h3 class="govuk-body govuk-!-font-size-19 govuk-!-font-weight-bold">What changes are needed
+                        to
+                        the current
+                        restrictions?</h3>
+
+                    <p><span class="highlight">Both restrictions should be removed.</span></p>
+
+                    <div class="govuk-!-padding-bottom-6"></div>
+                </div><!-- < RESTRICTIONS > -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
