@@ -21,7 +21,7 @@ Check your answers
 
         <!-- only add a heading for a list if there is more than one list -->
         <h2 class="govuk-heading-m">
-            Changes to restrictions
+            Changes to restrictions<span class="govuk-body" style="float: right"><a href="">Change</a></span>
         </h2>
 
         <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
@@ -30,17 +30,20 @@ Check your answers
         <!--   * none for single group of q&a -->
         <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
-                <!--<dt class="app-check-your-answers__question">-->
-                    <!--New restrictions-->
-                <!--</dt>-->
+                <dt class="app-check-your-answers__question">
+                    Remove restrictions
+                </dt>
                 <dd class="app-check-your-answers__answer">
-                    No restrictions
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li style="background-color: #fdb8c0; text-decoration: line-through;">Perfusion under general anesthetic & Schedule 1 killing</li>
+                        <li style="background-color: #fdb8c0; text-decoration: line-through;">Monday to Thursday only</li>
+                    </ul>
                 </dd>
-                <dd class="app-check-your-answers__change">
-                    <a href="#">
-                        Change
-                    </a>
-                </dd>
+                <!--<dd class="app-check-your-answers__change">-->
+                    <!--<a href="">-->
+                        <!--Change-->
+                    <!--</a>-->
+                <!--</dd>-->
             </div>
         </dl>
 
@@ -59,7 +62,7 @@ Check your answers
                     {{ data['decision'] }}
                 </dd>
                 <dd class="app-check-your-answers__change">
-                    <a href="#">
+                    <a href="">
                         Change
                     </a>
                 </dd>
