@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-!-padding-bottom-7"></div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+            Sprint 15
+            <!--<span class="govuk-caption-xl">{{releaseVersion}}</span>-->
+        </h1>{{releaseVersion | log }}
+
+        <!--<p>User testing 23.07.2018</p>-->
+
+        <h4 class="govuk-heading-s">Make named person</h4>
+        <ul class="govuk-list govuk-list--number">
+            <li><a href="make-named-person/sign-in">Sign in</a></li>
+            <li><a href="make-named-person/establishment-home">Home</a></li>
+            <li><a href="make-named-person/people">People</a></li>
+            <li><a href="make-named-person/search-results">Search results</a></li>
+            <li><a href="make-named-person/profile">Profile</a></li>
+            <li><a href="make-named-person/choose-named-role">Choose a named role</a></li>
+            <li><a href="make-named-person/ntco-application">NTCO application</a></li>
+            <li><a href="make-named-person/provde-notes">Provide notes</a></li>
+            <li><a href="make-named-person/application-sent">Application sent</a></li>
+        </ul>
+
+        <div class="govuk-!-padding-bottom-4"></div>
+
+        <!--<h4 class="govuk-heading-s">Tasks assignment</h4>
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <Hypothesis to test
+        </span>-->
+        <!--</summary>
+        <div class="govuk-details__text">
+        <p>We believe that [ not mixing tasks and notifications / progress updates ]</p>
+
+        <p>For [ both internal and external users ]</p>
+
+        <p>Will [ allow them to prioritise and focus on the task ]</p>
+        </div>
+        </details>
+        <ul class="govuk-list govuk-listnumber">
+            <li><a href="reassign/pick-tasks">Reassign team tasks to myself</a></li>
+            <li><a href="reassign/push-tasks">Reassign my tasks to others</a></li>
+            <li><a href="reassign/push-tasks-all">Reassign all of my tasks to others</a></li>
+        </ul>
+
+    </div>
+</div>
+
+{% endblock %}

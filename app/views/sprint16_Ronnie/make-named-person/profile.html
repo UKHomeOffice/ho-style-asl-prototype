@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="establishment-home">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="people">People</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="search-results">Search results</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link">Profile</a>
+              </lil>
+
+        </ol>
+    </div>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-l">{{ data['search-people'] }}
+                    <!--<span class="govuk-caption-m">Last updated 22 August 2018</span>-->
+                </h2>
+
+
+                <h2 class="govuk-heading-m">
+                    Details <span class="govuk-link govuk-!-font-size-19"
+                                       style="float: right; margin-top: 10px;"><a
+                        href="change-details">Change</a></span>
+                </h2>
+
+                <dl class="app-check-your-answers app-check-your-answers--short">
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Title
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            Mr
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Name
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            {{ data['search-people'] }}
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Date of birth
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            1/3/1978
+                            <!--{{ data[‘dob-day’] }}/{{ data[‘dob-month’] }}/{{ data[‘dob-year’] }}-->
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Email address
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            {{ data['search-people'] }}@birmingham.ac.uk
+                        </dd>
+                    </div>
+
+                    <div class="app-check-your-answers__contents">
+                        <dt class="app-check-your-answers__question">
+                            Phone number
+                        </dt>
+                        <dd class="app-check-your-answers__answer">
+                            07717723456
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="govuk-!-padding-bottom-8"></div>
+
+                <h2 class="govuk-heading-l">Establishments</h2>
+
+
+                                    <div class="card" style="width: 280px">
+                                        <div class="card-body active" style="height: 115px;">
+                                            <h3 class="govuk-heading-small card-heading">
+                                                <a class="card-link"
+                                                   href="profile-university-of-birmingham">
+                                                    University of Birmingham
+                                                </a>
+                                            </h3>
+                                            <p class="govuk-body-s"></p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="https://asl-prototypes.herokuapp.com/details?id=103" target="_blank">View establishment details</a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card" style="width: 280px">
+                                        <div class="card-body active" style="height: 115px;">
+                                            <h3 class="govuk-heading-small card-heading">
+                                                <a class="card-link"
+                                                   href="profile-university-of-oxford">
+                                                    University of Oxford
+                                                </a>
+                                            </h3>
+                                            <p class="govuk-body-s"></p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="https://asl-prototypes.herokuapp.com/details?id=103" target="_blank">View establishment details</a>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+              </main>
+          </div>
+
+    {% endblock %}

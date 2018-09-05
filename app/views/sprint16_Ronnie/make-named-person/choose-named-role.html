@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Research and testing with animals prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+    <!--<a href="/url/of/previous/page" class="govuk-back-link">Back</a>-->
+
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="establishment-home">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="people">People</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="search-results">Search results</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link"href="profile">Profile - {{ data['search-people'] }}</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link">Choose a named role</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-l">Choose a named role</h2>
+                <span id="vehicle-features-hint" class="govuk-hint">
+          Choose the named role that you would like to assign to this person.
+        </span>
+
+
+
+                <div class="govuk-!-padding-bottom-6"></div>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-3" name="permissions"
+                                       type="radio" value="">
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-3">
+                                    NTCO
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">The role of NTCO, (Named Training & Competency Officer) is to ensure compliance  with the standards set by the institution for supervision, competence and CPD for each of the functions of animal care staff, personal licence holders and Named Persons as laid out in the European Directive.</span>
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-2" name="permissions"
+                                       type="radio" value="">
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-2">
+                                    NIO
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">The role of NIO, (Named Information Officer), is to be familiar with the main provisions of ASPA and with the species used and the types of research performed in the establishment.  The NIO also disseminates relevant up-to-date information to the AWERB and maintains contacts for information sharing (e.g. with the Home Office and specialist groups and bodies), and to assist project licence holders to secure information relevant to their projects and provide guidance.</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;"></span>
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="permission-1" name="permissions"
+                                       type="radio" value="">
+                                <label class="govuk-label govuk-radios__label govuk-!-font-weight-bold"
+                                       for="permission-1">
+                                    Admin
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: 10px;">View, apply, and amend rights for all licences related to this establishment.</span>
+                                    <span id="changed-name-hint" class="govuk-hint" style="margin-top: -10px;">Create, manage and amend rights for all user accounts related to this establishment.</span>
+                                    </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <a href="invite-sent#invited" class="govuk-button" type="submit">
+                    Continue
+                </a>
+
+            </div>
+        </div>
+</div>
+
+</main>
+</div>
+
+
+{% endblock %}
